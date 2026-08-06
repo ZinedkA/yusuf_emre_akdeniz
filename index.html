@@ -94,29 +94,10 @@
       </div>
     </div>
     <div class="hero-visual reveal">
-      <div class="orbit-system">
-        <div class="planet-core">
-          <div class="planet-inner">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M40 8 L48 28 L68 28 L52 41 L58 61 L40 49 L22 61 L28 41 L12 28 L32 28 Z" fill="url(#starGrad)" opacity="0.9"/>
-              <defs>
-                <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#00d2ff"/>
-                  <stop offset="100%" stop-color="#7b2ff7"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-        </div>
-        <div class="orbit orbit-1">
-          <div class="orbit-dot dot-1"><span class="orbit-label">ESP32</span></div>
-        </div>
-        <div class="orbit orbit-2">
-          <div class="orbit-dot dot-2"><span class="orbit-label">STM32</span></div>
-        </div>
-        <div class="orbit orbit-3">
-          <div class="orbit-dot dot-3"><span class="orbit-label">Altium</span></div>
-        </div>
+      <div class="bg-animations">
+        <div class="anim-item anim-uav">🚁</div>
+        <div class="anim-item anim-rocket">🚀</div>
+        <div class="anim-item anim-satellite">🛰️</div>
       </div>
     </div>
     <a href="#about" class="scroll-hint" id="scroll-hint-link">
@@ -259,6 +240,18 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── INTERNSHIP ─── -->
+  <section id="internship">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="intern_tag">02.5 / Internship</span>
+        <h2 class="section-title" data-i18n="intern_title">Internship</h2>
+      </div>
+      <div class="timeline">
         <div class="timeline-item reveal" id="exp-intern">
           <div class="timeline-marker">
             <div class="marker-dot"></div>
@@ -279,7 +272,6 @@
             </ul>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -555,6 +547,14 @@
       </div>
     </div>
   </section>
+
+  <!-- ─── PROJECT MODAL ─── -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content glass-card">
+      <span class="close-modal">&times;</span>
+      <img id="modal-img" src="" alt="Project Image" />
+    </div>
+  </div>
 
   <!-- ─── FOOTER ─── -->
   <footer>
