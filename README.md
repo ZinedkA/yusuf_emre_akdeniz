@@ -1,3 +1,5 @@
 ﻿# Yusuf Emre Akdeniz Portfolio
 
-Kişisel web portfolyosu. HTML, CSS ve JS ile geliştirilmiştir.
+Kişisel web portfolyosu için linke gidiniz:
+
+https://zinedka.github.io/yusuf_emre_akdeniz/
