@@ -45,6 +45,8 @@ const TRANSLATIONS = {
     // Experience
     exp_tag:   '02 / Experience',
     exp_title: 'Work History',
+    intern_tag: '02.5 / Internship',
+    intern_title: 'Internship History',
     exp1_title: 'Hardware Design Engineer',
     exp1_date:  'Nov 2024 — Present',
     exp1_b1: 'Designed <strong>STM32H7-based Autonomous Flight Control Board</strong> for VTOL and drone platforms',
@@ -169,6 +171,8 @@ const TRANSLATIONS = {
     // Experience
     exp_tag:   '02 / Deneyim',
     exp_title: 'İş Geçmişi',
+    intern_tag: '02.5 / Staj',
+    intern_title: 'Staj Bilgisi',
     exp1_title: 'Donanım Tasarım Mühendisi',
     exp1_date:  'Kas 2024 — Devam ediyor',
     exp1_b1: 'VTOL ve drone platformları için <strong>STM32H7 tabanlı Otonom Uçuş Kontrol Kartı</strong> tasarlandı',
@@ -461,3 +465,54 @@ function applyTranslations(lang) {
 document.querySelectorAll('.project-card.reveal').forEach((card, i) => {
   card.style.transitionDelay = `${i * 0.06}s`;
 });
+
+/* ════════════════════════════════════════════
+   9. PROJECT MODAL
+════════════════════════════════════════════ */
+(function initModal() {
+  const modal = document.getElementById('project-modal');
+  const modalImg = document.getElementById('modal-img');
+  const closeBtn = document.querySelector('.close-modal');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  // Placeholder images for projects - the user can change these later
+  const projectImages = {
+    'proj-irec': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=IREC+2025',
+    'proj-tnf-high': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=TEKNOFEST+High+Altitude',
+    'proj-tnf-sub': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=TEKNOFEST+Underwater',
+    'proj-tnf-air': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=TEKNOFEST+Air+Defense',
+    'proj-tnf-mid': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=TEKNOFEST+Mid+Altitude',
+    'proj-silent': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=Silent+Track',
+    'proj-baykus': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=Baykus+Guidance+Kit'
+  };
+
+  projectCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const projId = card.id;
+      // Use the mapped image or a generic placeholder if not found
+      const imgSrc = projectImages[projId] || 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=Project+Image';
+      
+      modalImg.src = imgSrc;
+      modal.classList.add('show');
+    });
+  });
+
+  // Close modal when clicking the close button
+  closeBtn.addEventListener('click', () => {
+    modal.classList.remove('show');
+  });
+
+  // Close modal when clicking outside the image
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('show');
+    }
+  });
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+      modal.classList.remove('show');
+    }
+  });
+})();
