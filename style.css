@@ -1025,3 +1025,43 @@ footer {
   border-color: rgba(255, 50, 50, 0.5);
   color: #ff5555;
 }
+
+/* --- ADMIN MODE STYLES --- */
+.admin-editable {
+  outline: 1px dashed rgba(59, 130, 246, 0.5) !important;
+  cursor: text !important;
+  transition: outline 0.2s;
+}
+
+.admin-editable:hover, .admin-editable:focus {
+  outline: 2px dashed rgba(59, 130, 246, 1) !important;
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.admin-droppable {
+  position: relative;
+}
+
+.admin-droppable::after {
+  content: 'Sürükle Bırak';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(59, 130, 246, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  border-radius: inherit;
+  z-index: 1000;
+}
+
+.admin-droppable.drag-over::after {
+  opacity: 1;
+}
