@@ -308,7 +308,7 @@ const TRANSLATIONS = {
 
 
 /* ════════════════════════════════════════════
-   2. THEME TOGGLE — dark (default) / light
+   2. THEME TOGGLE — dark (default)  /  light
 ════════════════════════════════════════════ */
 (function initTheme() {
   const btn  = document.getElementById('theme-toggle');
