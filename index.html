@@ -1,59 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" data-lang="tr"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Yusuf Emre Akdeniz — Mechatronics Engineer specializing in avionics, embedded systems, and aerospace projects.">
-  <meta name="keywords" content="Mechatronics Engineer, Avionics, Embedded Systems, TEKNOFEST, IREC, PCB Design, STM32, ESP32">
-  <meta property="og:title" content="Yusuf Emre Akdeniz | Mechatronics Engineer">
-  <meta property="og:description" content="Avionics team captain, hardware designer, and rocket systems engineer with 4+ years of project experience.">
+<html lang="en" data-theme="dark" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Yusuf Emre Akdeniz — Mechatronics Engineer specializing in avionics, embedded systems, and aerospace projects."/>
+  <meta name="keywords" content="Mechatronics Engineer, Avionics, Embedded Systems, TEKNOFEST, IREC, PCB Design, STM32, ESP32"/>
+  <meta property="og:title" content="Yusuf Emre Akdeniz | Mechatronics Engineer"/>
+  <meta property="og:description" content="Avionics team captain, hardware designer, and rocket systems engineer with 4+ years of project experience."/>
   <title>Yusuf Emre Akdeniz | Mechatronics Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-<style type="text/css"></style></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
 <body>
 
   <!-- ─── CANVAS BACKGROUND ─── -->
-  <canvas id="starfield" width="1696" height="861"></canvas>
+  <canvas id="starfield"></canvas>
 
   <!-- ─── NAVIGATION ─── -->
-  <nav id="navbar" class="">
+  <nav id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">YEA<span class="dot">.</span></a>
       <ul class="nav-links">
-        <li class=""><a href="#about" id="nav-about" data-i18n="nav_about" class="">Hakkımda</a></li>
-        <li class=""><a href="#experience" id="nav-experience" data-i18n="nav_experience" class="">Deneyim</a></li>
-        <li class=""><a href="#projects" id="nav-projects" data-i18n="nav_projects" class="">Projeler</a></li>
-        <li class=""><a href="#skills" id="nav-skills" data-i18n="nav_skills" class="">Yetenekler</a></li>
-        <li class=""><a href="#contact" id="nav-contact" data-i18n="nav_contact" class="">İletişim</a></li>
+        <li><a href="#about"      id="nav-about"      data-i18n="nav_about">About</a></li>
+        <li><a href="#experience" id="nav-experience" data-i18n="nav_experience">Experience</a></li>
+        <li><a href="#projects"   id="nav-projects"   data-i18n="nav_projects">Projects</a></li>
+        <li><a href="#skills"     id="nav-skills"     data-i18n="nav_skills">Skills</a></li>
+        <li><a href="#contact"    id="nav-contact"    data-i18n="nav_contact">Contact</a></li>
       </ul>
 
       <!-- Controls group -->
       <div class="nav-controls">
         <!-- Language toggle -->
         <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language" title="Dil / Language">
-          <span class="lang-label" id="lang-label">EN</span>
+          <span class="lang-label" id="lang-label">TR</span>
         </button>
         <!-- Theme toggle -->
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
           </svg>
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
           </svg>
         </button>
         <!-- Hire Me CTA -->
-        <a href="mailto:ysfmrakdeniz@gmail.com" class="nav-cta" id="nav-cta" data-i18n="nav_hire">İşe Al</a>
+        <a href="mailto:ysfmrakdeniz@gmail.com" class="nav-cta" id="nav-cta" data-i18n="nav_hire">Hire Me</a>
       </div>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-        <span class=""></span><span class=""></span><span class=""></span>
+        <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
@@ -61,35 +62,38 @@
   <!-- ─── HERO ─── -->
   <section id="hero">
     <div class="hero-content">
-      <div class="hero-badge reveal visible">
+      <div class="hero-badge reveal">
         <span class="badge-dot"></span>
-        <span data-i18n="hero_badge" class="">Fırsatlara açığım</span>
+        <span data-i18n="hero_badge">Available for opportunities</span>
       </div>
-      <h1 class="hero-title reveal visible">
-        Yusuf Emre<br>
+      <h1 class="hero-title reveal">
+        Yusuf Emre<br/>
         <span class="gradient-text">Akdeniz</span>
       </h1>
-      <div class="hero-subtitle reveal visible">
-        <span class="typewriter" id="typewriter">Roket Sistemleri Tasarım</span>
+      <div class="hero-subtitle reveal">
+        <span class="typewriter" id="typewriter"></span>
       </div>
-      <p class="hero-desc reveal visible" data-i18n="hero_desc">Düzce Üniversitesi Mekatronik Mühendisliği Yüksek Lisans öğrencisi. TEKNOFEST ve IREC'te Aviyonik Takım Kaptanı. İHA, roket ve otonom sistemler için donanım tasarımcısı.</p>
-      <div class="hero-actions reveal visible">
-        <a href="#projects" class="btn btn-primary" id="hero-projects-btn" data-i18n="hero_btn_projects">Projeleri Gör</a>
-        <a href="#contact" class="btn btn-ghost" id="hero-contact-btn" data-i18n="hero_btn_contact">İletişime Geç</a>
+      <p class="hero-desc reveal" data-i18n="hero_desc">
+        Mechatronics MSc student at Düzce University. Avionics Team Captain at TEKNOFEST &amp; IREC.
+        Hardware designer for UAVs, rockets, and autonomous systems.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary" id="hero-projects-btn" data-i18n="hero_btn_projects">View Projects</a>
+        <a href="#contact"  class="btn btn-ghost"   id="hero-contact-btn"  data-i18n="hero_btn_contact">Get in Touch</a>
       </div>
-      <div class="hero-stats reveal visible">
+      <div class="hero-stats reveal">
         <div class="stat">
           <span class="stat-num">4+</span>
-          <span class="stat-label" data-i18n="stat_experience">Yıllık Deneyim</span>
+          <span class="stat-label" data-i18n="stat_experience">Years Experience</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
           <span class="stat-num">7+</span>
-          <span class="stat-label" data-i18n="stat_projects">Yarışma Projesi</span>
+          <span class="stat-label" data-i18n="stat_projects">Competition Projects</span>
         </div>
       </div>
     </div>
-    <div class="hero-visual reveal visible">
+    <div class="hero-visual reveal">
       <div class="bg-animations">
         <div class="anim-item anim-uav">🚁</div>
         <div class="anim-item anim-rocket">🚀</div>
@@ -104,53 +108,66 @@
   <!-- ─── ABOUT ─── -->
   <section id="about">
     <div class="container">
-      <div class="section-header reveal visible">
-        <span class="section-tag" data-i18n="about_tag">01 / Hakkımda</span>
-        <h2 class="section-title" data-i18n="about_title">Ben Kimim</h2>
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="about_tag">01 / About</span>
+        <h2 class="section-title" data-i18n="about_title">Who I Am</h2>
       </div>
       <div class="about-grid">
-        <div class="about-text reveal visible">
-          <p data-i18n="about_p1" class="">Düzce Üniversitesi'nde <strong>Mekatronik Mühendisliği Yüksek Lisans</strong> öğrencisiyim. Aviyonik sistem tasarımı, roket teknolojileri ve havacılık donanım geliştirme alanlarında 4 yılı aşkın uygulamalı deneyimim bulunmaktadır.</p>
-          <p data-i18n="about_p2" class="">TEKNOFEST ve IREC yarışmalarında <strong>Aviyonik Takım Kaptanı ve Sistem Tasarımcısı</strong> olarak kavramdan başarılı operasyona kadar projeleri yönetim; uçuş bilgisayarları, telemetri sistemleri ve otonom kontrol kartları tasarladım.</p>
-          <p data-i18n="about_p3" class="">Şu anda Soylu Aerospace'te <strong>Donanım Tasarım Mühendisi</strong> olarak çalışıyor; MIL-STD-704 ve DO-160 standartlarına uygun STM32H7 tabanlı otonom uçuş kontrol kartları geliştiriyorum.</p>
+        <div class="about-text reveal">
+          <p data-i18n="about_p1">
+            I'm a <strong>Mechatronics Engineering MSc student</strong> at Düzce University with over
+            4 years of hands-on experience in avionics system design, rocket technologies, and
+            aerospace hardware development.
+          </p>
+          <p data-i18n="about_p2">
+            As an <strong>Avionics Team Captain and System Designer</strong> at TEKNOFEST and IREC competitions,
+            I have led projects from concept to successful operation — designing flight computers,
+            telemetry systems, and autonomous control cards.
+          </p>
+          <p data-i18n="about_p3">
+            Currently working as a <strong>Hardware Design Engineer</strong> at Soylu Aerospace,
+            developing STM32H7-based autonomous flight control boards for VTOL and drone platforms
+            following MIL-STD-704 and DO-160 standards.
+          </p>
           <div class="about-links">
             <a href="mailto:ysfmrakdeniz@gmail.com" class="about-link" id="about-email-link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,12 2,6"></polyline></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
               ysfmrakdeniz@gmail.com
             </a>
             <a href="tel:+905367094791" class="about-link" id="about-phone-link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.64A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"></path></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.64A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
               +90 536 709 4791
             </a>
             <span class="about-link no-hover">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span data-i18n="about_location" class="">Düzce, Türkiye</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="about_location">Düzce, Turkey</span>
             </span>
           </div>
         </div>
-        <div class="about-cards reveal visible">
+        <div class="about-cards reveal">
           <div class="edu-card glass-card" id="edu-msc-card">
             <div class="edu-icon">🎓</div>
             <div class="edu-info">
-              <span class="edu-degree" data-i18n="edu_msc_degree">Y. Lisans — Mekatronik Mühendisliği</span>
+              <span class="edu-degree" data-i18n="edu_msc_degree">MSc — Mechatronics Engineering</span>
               <span class="edu-school">Düzce University</span>
               <span class="edu-gpa">GPA: 4.00 / 4.00</span>
-              <span class="edu-thesis" data-i18n="edu_msc_thesis">Tez: Hava Araçlarında Makine Öğrenmesi ile Erken Arıza Tespiti</span>
+              <span class="edu-thesis" data-i18n="edu_msc_thesis">Thesis: Early Fault Detection in Aircraft via Machine Learning</span>
             </div>
           </div>
           <div class="edu-card glass-card" id="edu-bsc-card">
             <div class="edu-icon">📐</div>
             <div class="edu-info">
-              <span class="edu-degree" data-i18n="edu_bsc_degree">Lisans — Mekatronik Mühendisliği</span>
+              <span class="edu-degree" data-i18n="edu_bsc_degree">BSc — Mechatronics Engineering</span>
               <span class="edu-school">Düzce University</span>
               <span class="edu-gpa">GPA: 3.18 / 4.00</span>
+              <span class="edu-thesis" data-i18n="edu_bsc_thesis">Thesis: Modüler Güdüm Kiti</span>
             </div>
           </div>
           <div class="about-lang glass-card">
             <div class="lang-icon">🌐</div>
             <div class="lang-info">
-              <span class="lang-name" data-i18n="lang_name">İngilizce</span>
-              <span class="lang-level" data-i18n="lang_level">B1 — Orta Seviye</span>
+              <span class="lang-name" data-i18n="lang_name">English</span>
+              <span class="lang-level" data-i18n="lang_level">B1 — Intermediate</span>
             </div>
           </div>
         </div>
@@ -161,13 +178,13 @@
   <!-- ─── EXPERIENCE ─── -->
   <section id="experience">
     <div class="container">
-      <div class="section-header reveal visible">
-        <span class="section-tag" data-i18n="exp_tag">02 / Deneyim</span>
-        <h2 class="section-title" data-i18n="exp_title">İş Geçmişi</h2>
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="exp_tag">02 / Experience</span>
+        <h2 class="section-title" data-i18n="exp_title">Work History</h2>
       </div>
       <div class="timeline">
 
-        <div class="timeline-item reveal visible" id="exp-soylu">
+        <div class="timeline-item reveal" id="exp-soylu">
           <div class="timeline-marker">
             <div class="marker-dot"></div>
             <div class="marker-line"></div>
@@ -175,11 +192,11 @@
           <div class="timeline-content glass-card">
             <div class="exp-header">
               <div class="exp-title-group">
-                <h3 data-i18n="exp1_title" class="">Donanım Tasarım Mühendisi</h3>
-                <span class="exp-company">Soylu Aerospace A.Ş.</span>
+                <h3 data-i18n="exp1_title">Hardware Design Engineer</h3>
+                <a href="https://www.soylu.com" target="_blank" class="exp-company" style="text-decoration: underline; color: inherit;">Soylu Aerospace A.Ş.</a>
               </div>
               <div class="exp-meta">
-                <span class="exp-date" data-i18n="exp1_date">Kas 2024 — Devam ediyor</span>
+                <span class="exp-date" data-i18n="exp1_date">Nov 2024 — Present</span>
                 <span class="exp-location">📍 Düzce</span>
               </div>
             </div>
@@ -189,14 +206,14 @@
               <span class="tag">CAN</span><span class="tag">UART</span><span class="tag">Ethernet</span>
             </div>
             <ul class="exp-bullets">
-              <li data-i18n="exp1_b1" class="">VTOL ve drone platformları için <strong>STM32H7 tabanlı Otonom Uçuş Kontrol Kartı</strong> tasarlandı</li>
-              <li data-i18n="exp1_b2" class="">5 A ayarlanabilir buck converter çıkışlı ve CAN modüllü 260 A akım kapasiteli <strong>Güç Dağıtım Kartı</strong> geliştirildi; EMI/EMC uyum testleri yürütüldü</li>
-              <li data-i18n="exp1_b3" class="">Tilt mekanizması ve itki test sistemleri tasarlandı; elektromekanik üretim süreci yönetildi</li>
+              <li data-i18n="exp1_b1">Designed <strong>STM32H7-based Autonomous Flight Control Board</strong> for VTOL and drone platforms</li>
+              <li data-i18n="exp1_b2">Developed 260 A current-carrying <strong>Power Distribution Board</strong> with 5 A adjustable buck converter output and CAN module; conducted EMI/EMC compliance testing</li>
+              <li data-i18n="exp1_b3">Designed tilt mechanism and thrust test systems; led electromechanical production</li>
             </ul>
           </div>
         </div>
 
-        <div class="timeline-item reveal visible" id="exp-puhu">
+        <div class="timeline-item reveal" id="exp-puhu">
           <div class="timeline-marker">
             <div class="marker-dot"></div>
             <div class="marker-line"></div>
@@ -204,11 +221,11 @@
           <div class="timeline-content glass-card">
             <div class="exp-header">
               <div class="exp-title-group">
-                <h3 data-i18n="exp2_title" class="">Gömülü Yazılım ve Donanım Tasarım Mühendisi</h3>
-                <span class="exp-company">Puhu Electronics A.Ş.</span>
+                <h3 data-i18n="exp2_title">Embedded Software &amp; Hardware Design Engineer</h3>
+                <a href="https://www.puhuelectronics.com" target="_blank" class="exp-company" style="text-decoration: underline; color: inherit;">Puhu Electronics A.Ş.</a>
               </div>
               <div class="exp-meta">
-                <span class="exp-date" data-i18n="exp2_date">Haz 2024 — Eki 2024</span>
+                <span class="exp-date" data-i18n="exp2_date">Jun 2024 — Oct 2024</span>
                 <span class="exp-location">📍 Gölbaşı, Ankara</span>
               </div>
             </div>
@@ -218,8 +235,8 @@
               <span class="tag">MIPI</span><span class="tag">Embedded Linux</span>
             </div>
             <ul class="exp-bullets">
-              <li data-i18n="exp2_b1" class="">Sağlık ürünleri için elektronik donanım ve <strong>Gömülü Linux uygulamaları</strong> tasarlandı</li>
-              <li data-i18n="exp2_b2" class="">Tıbbi cihazlar için mekanik tasarım ve laboratuvar testleri (DC yük, osiloskop) gerçekleştirildi</li>
+              <li data-i18n="exp2_b1">Designed electronic hardware and <strong>Embedded Linux applications</strong> for healthcare products</li>
+              <li data-i18n="exp2_b2">Performed mechanical design and laboratory testing (DC load, oscilloscope) for medical devices</li>
             </ul>
           </div>
         </div>
@@ -231,28 +248,28 @@
   <!-- ─── INTERNSHIP ─── -->
   <section id="internship">
     <div class="container">
-      <div class="section-header reveal visible">
-        <span class="section-tag" data-i18n="intern_tag">02.5 / Staj</span>
-        <h2 class="section-title" data-i18n="intern_title">Staj Bilgisi</h2>
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="intern_tag">02.5 / Internship</span>
+        <h2 class="section-title" data-i18n="intern_title">Internship</h2>
       </div>
       <div class="timeline">
-        <div class="timeline-item reveal visible" id="exp-intern">
+        <div class="timeline-item reveal" id="exp-intern">
           <div class="timeline-marker">
             <div class="marker-dot"></div>
           </div>
           <div class="timeline-content glass-card">
             <div class="exp-header">
               <div class="exp-title-group">
-                <h3 data-i18n="exp3_title" class="">Stajyer Mekatronik Mühendisi</h3>
-                <span class="exp-company">Puhu Electronics A.Ş.</span>
+                <h3 data-i18n="exp3_title">Intern Mechatronics Engineer</h3>
+                <a href="https://www.puhuelectronics.com" target="_blank" class="exp-company" style="text-decoration: underline; color: inherit;">Puhu Electronics A.Ş.</a>
               </div>
               <div class="exp-meta">
-                <span class="exp-date" data-i18n="exp3_date">Şub 2024 — May 2024</span>
+                <span class="exp-date" data-i18n="exp3_date">Feb 2024 — May 2024</span>
                 <span class="exp-location">📍 Gölbaşı, Ankara</span>
               </div>
             </div>
             <ul class="exp-bullets">
-              <li data-i18n="exp3_b1" class="">PCB montaj hattı operasyonları yürütüldü; lineer motor ve pil test sonuçları raporlandı</li>
+              <li data-i18n="exp3_b1">Operated PCB assembly line; documented linear motor and battery test results</li>
             </ul>
           </div>
         </div>
@@ -263,19 +280,20 @@
   <!-- ─── PROJECTS ─── -->
   <section id="projects">
     <div class="container">
-      <div class="section-header reveal visible">
-        <span class="section-tag" data-i18n="proj_tag">03 / Projeler</span>
-        <h2 class="section-title" data-i18n="proj_title">Yarışmalar ve Projeler</h2>
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="proj_tag">03 / Projects</span>
+        <h2 class="section-title" data-i18n="proj_title">Competition &amp; Projects</h2>
       </div>
       <div class="projects-grid">
 
-        <div class="project-card glass-card reveal visible" id="proj-irec" style="transition-delay: 0s;">
-          <div class="project-badge badge-gold" data-i18n="proj1_badge">🏆 Tam Puan</div>
-          <div class="project-icon-wrap"><div class="project-icon">🚀</div></div>
+        <div class="project-card glass-card reveal" id="proj-irec">
           <div class="project-content">
-            <h3 data-i18n="proj1_title" class="">IREC 2025</h3>
-            <p class="project-subtitle" data-i18n="proj1_sub">Uluslararası Roket Mühendisliği Yarışması — ABD</p>
-            <p class="project-desc" data-i18n="proj1_desc">ABD'de düzenlenen prestijli yarışmada görev yükü tasarımında tam puan alındı. Yer İstasyonu, İletimci ve Görev Yükü arasında GPS, IMU ve mesaj verisi aktaran 3 düğümlü LoRa haberleşme mimarisi kuruldu.</p>
+            <h3 data-i18n="proj1_title">IREC 2025</h3>
+            <p class="project-subtitle" data-i18n="proj1_sub">International Rocket Engineering Competition — USA</p>
+            <p class="project-desc" data-i18n="proj1_desc">
+              Achieved full score on payload design at the prestigious US competition.
+              Built a 3-node LoRa communication architecture transmitting GPS, IMU, &amp; message data between Ground Station, Transmitter, and Payload.
+            </p>
             <div class="project-tags">
               <span class="tag">ESP32-S3</span><span class="tag">LoRa</span>
               <span class="tag">C/C++</span><span class="tag">Altium</span>
@@ -283,13 +301,13 @@
           </div>
         </div>
 
-        <div class="project-card glass-card reveal visible" id="proj-tnf-high" style="transition-delay: 0.06s;">
-          <div class="project-badge badge-blue" data-i18n="proj2_badge">🎖️ Kaptan</div>
-          <div class="project-icon-wrap"><div class="project-icon">📡</div></div>
+        <div class="project-card glass-card reveal" id="proj-tnf-high">
           <div class="project-content">
-            <h3 data-i18n="proj2_title" class="">TEKNOFEST — Yüksek İrtifa Roketi 2025</h3>
-            <p class="project-subtitle" data-i18n="proj2_sub">Aviyonik Takım Kaptanı</p>
-            <p class="project-desc" data-i18n="proj2_desc">Görev yükü aviyonik sistemi tasarlandı ve üretildi. IMU verilerinden tahmini iniş konumu hesaplayıp telemetriyi yer istasyonuna gerçek zamanlı ileten algoritma geliştirildi.</p>
+            <h3 data-i18n="proj2_title">TEKNOFEST — High Altitude Rocket 2025</h3>
+            <p class="project-subtitle" data-i18n="proj2_sub">Avionics Team Captain</p>
+            <p class="project-desc" data-i18n="proj2_desc">
+              Designed &amp; manufactured the payload avionics system. Developed algorithm that estimates landing position from IMU data and transmits telemetry to the ground station in real-time.
+            </p>
             <div class="project-tags">
               <span class="tag">ESP32-S3</span><span class="tag">Sensor Fusion</span>
               <span class="tag">LoRa</span><span class="tag">Telemetry</span>
@@ -297,13 +315,13 @@
           </div>
         </div>
 
-        <div class="project-card glass-card reveal visible" id="proj-tnf-sub" style="transition-delay: 0.12s;">
-          <div class="project-badge badge-blue" data-i18n="proj3_badge">🥈 Finalist</div>
-          <div class="project-icon-wrap"><div class="project-icon">🌊</div></div>
+        <div class="project-card glass-card reveal" id="proj-tnf-sub">
           <div class="project-content">
-            <h3 data-i18n="proj3_title" class="">TEKNOFEST — Sualtı Roketi 2025</h3>
-            <p class="project-subtitle" data-i18n="proj3_sub">Otonom Sualtı Aracı</p>
-            <p class="project-desc" data-i18n="proj3_desc">Otonom sualtı roket aracı için kontrol kartı geliştirildi. Analog sensör sinyalleri OpAmp ve ADC ile dijitale dönüştürüldü. BLDC ve servo motorlarla tahrik sistemi kuruldu.</p>
+            <h3 data-i18n="proj3_title">TEKNOFEST — Underwater Rocket 2025</h3>
+            <p class="project-subtitle" data-i18n="proj3_sub">Autonomous Underwater Vehicle</p>
+            <p class="project-desc" data-i18n="proj3_desc">
+              Developed the control board for an autonomous underwater rocket vehicle. Analog sensor signals digitised via OpAmp &amp; ADC. Propulsion system built with BLDC and servo motors.
+            </p>
             <div class="project-tags">
               <span class="tag">ESP32-S3</span><span class="tag">BLDC</span>
               <span class="tag">ADC</span><span class="tag">Altium</span>
@@ -311,13 +329,13 @@
           </div>
         </div>
 
-        <div class="project-card glass-card reveal visible" id="proj-tnf-air" style="transition-delay: 0.18s;">
-          <div class="project-badge badge-blue" data-i18n="proj4_badge">🥈 Finalist</div>
-          <div class="project-icon-wrap"><div class="project-icon">🎯</div></div>
+        <div class="project-card glass-card reveal" id="proj-tnf-air">
           <div class="project-content">
-            <h3 data-i18n="proj4_title" class="">TEKNOFEST — Hava Savunma Sistemleri 2024</h3>
-            <p class="project-subtitle" data-i18n="proj4_sub">Görüntü İşleme ile Takip Sistemi</p>
-            <p class="project-desc" data-i18n="proj4_desc">OpenCV ve Haar Cascade eğitimli model ile balon hedeflerin tespiti sağlandı. Step ve servo motorlarla otonom takip ve imha algoritması oluşturuldu.</p>
+            <h3 data-i18n="proj4_title">TEKNOFEST — Air Defense Systems 2024</h3>
+            <p class="project-subtitle" data-i18n="proj4_sub">Computer Vision Tracking System</p>
+            <p class="project-desc" data-i18n="proj4_desc">
+              Balloon target detection using OpenCV &amp; Haar Cascade trained model. Built autonomous tracking &amp; termination algorithm with stepper and servo motors.
+            </p>
             <div class="project-tags">
               <span class="tag">Raspberry Pi 4</span><span class="tag">OpenCV</span>
               <span class="tag">Python</span><span class="tag">Computer Vision</span>
@@ -325,13 +343,13 @@
           </div>
         </div>
 
-        <div class="project-card glass-card reveal visible" id="proj-tnf-mid" style="transition-delay: 0.24s;">
-          <div class="project-badge badge-purple" data-i18n="proj5_badge">👑 Takım Lideri</div>
-          <div class="project-icon-wrap"><div class="project-icon">🛸</div></div>
+        <div class="project-card glass-card reveal" id="proj-tnf-mid">
           <div class="project-content">
-            <h3 data-i18n="proj5_title" class="">TEKNOFEST — Orta İrtifa Roketi 2024</h3>
-            <p class="project-subtitle" data-i18n="proj5_sub">Takım Kaptanı — Uçuş Bilgisayarı Tasarımı</p>
-            <p class="project-desc" data-i18n="proj5_desc">Takım kaptanı olarak STM32 tabanlı, MOSFET tetiklemeli Uçuş Kontrol Bilgisayarı ve kurtarma, ayrılma, haberleşme yöneten görev yükü bilgisayarı tasarlandı.</p>
+            <h3 data-i18n="proj5_title">TEKNOFEST — Mid Altitude Rocket 2024</h3>
+            <p class="project-subtitle" data-i18n="proj5_sub">Team Captain — Flight Computer Design</p>
+            <p class="project-desc" data-i18n="proj5_desc">
+              As team captain, designed the STM32-based MOSFET-triggered Flight Control Computer and payload computer managing recovery, separation, and communication systems.
+            </p>
             <div class="project-tags">
               <span class="tag">STM32F103</span><span class="tag">MOSFET</span>
               <span class="tag">Altium</span><span class="tag">SolidWorks</span>
@@ -339,13 +357,13 @@
           </div>
         </div>
 
-        <div class="project-card glass-card reveal visible" id="proj-silent" style="transition-delay: 0.3s;">
-          <div class="project-badge badge-green" data-i18n="proj6_badge">🏅 Finalist</div>
-          <div class="project-icon-wrap"><div class="project-icon">🧭</div></div>
+        <div class="project-card glass-card reveal" id="proj-silent">
           <div class="project-content">
-            <h3 data-i18n="proj6_title" class="">Silent Track — 2024</h3>
-            <p class="project-subtitle" data-i18n="proj6_sub">Düzce-Bolu Ar-Ge Proje Pazarı Finalisti</p>
-            <p class="project-desc" data-i18n="proj6_desc">SSIM ve INS teknolojileri kullanılarak kesintisiz uydu ihtiyacı olmadan konum tespiti ve rota takibi hedeflendi. Düzce-Bolu Ar-Ge Proje Pazarı Finalisti.</p>
+            <h3 data-i18n="proj6_title">Silent Track — 2024</h3>
+            <p class="project-subtitle" data-i18n="proj6_sub">Düzce-Bolu R&amp;D Project Market Finalist</p>
+            <p class="project-desc" data-i18n="proj6_desc">
+              GPS-independent positioning and route tracking using SSIM &amp; INS technologies. Finalist at the Düzce-Bolu R&amp;D Project Market.
+            </p>
             <div class="project-tags">
               <span class="tag">Raspberry Pi 4</span><span class="tag">INS</span>
               <span class="tag">SSIM</span><span class="tag">Python</span>
@@ -353,13 +371,13 @@
           </div>
         </div>
 
-        <div class="project-card glass-card reveal visible" id="proj-baykus" style="transition-delay: 0.36s;">
-          <div class="project-badge badge-orange" data-i18n="proj7_badge">🦉 Bitirme</div>
-          <div class="project-icon-wrap"><div class="project-icon">🎓</div></div>
+        <div class="project-card glass-card reveal" id="proj-baykus">
           <div class="project-content">
-            <h3 data-i18n="proj7_title" class="">Baykuş Güdüm Kiti — 2024</h3>
-            <p class="project-subtitle" data-i18n="proj7_sub">Bitirme Projesi — ML tabanlı Güdüm Sistemi</p>
-            <p class="project-desc" data-i18n="proj7_desc">Flare ve Chaff gibi önleyici sistemleri aşmayı hedefleyen makine öğrenmesi tabanlı hedef tanıma ve takip güdüm kiti. Temiz görüntülerde <strong>&gt;%95</strong>, önleyicili görüntülerde <strong>&gt;%80</strong> doğruluk sağlandı.</p>
+            <h3 data-i18n="proj7_title">Baykuş Guidance Kit — 2024</h3>
+            <p class="project-subtitle" data-i18n="proj7_sub">Capstone — ML-based Guidance System</p>
+            <p class="project-desc" data-i18n="proj7_desc">
+              ML-powered target recognition and tracking guidance kit designed to counter Flare &amp; Chaff countermeasures. Achieved <strong>&gt;95% accuracy</strong> on clean images and <strong>&gt;80%</strong> under countermeasures.
+            </p>
             <div class="project-tags">
               <span class="tag">Raspberry Pi</span><span class="tag">Machine Learning</span>
               <span class="tag">Python</span><span class="tag">Arduino</span>
@@ -374,47 +392,47 @@
   <!-- ─── SKILLS ─── -->
   <section id="skills">
     <div class="container">
-      <div class="section-header reveal visible">
-        <span class="section-tag" data-i18n="skills_tag">04 / Yetenekler</span>
-        <h2 class="section-title" data-i18n="skills_title">Teknik Yetkinlikler</h2>
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="skills_tag">04 / Skills</span>
+        <h2 class="section-title" data-i18n="skills_title">Technical Arsenal</h2>
       </div>
       <div class="skills-grid">
 
-        <div class="skill-group glass-card reveal visible" id="skill-hw">
+        <div class="skill-group glass-card reveal" id="skill-hw">
           <div class="skill-group-header">
             <span class="skill-group-icon">🔧</span>
-            <h3 data-i18n="skill_hw_title" class="">Donanım ve Tasarım</h3>
+            <h3 data-i18n="skill_hw_title">Hardware &amp; Design</h3>
           </div>
           <div class="skill-tags">
-            <span class="skill-tag" data-i18n="s_avionics">Aviyonik Tasarım</span>
-            <span class="skill-tag" data-i18n="s_schematic">Şematik Tasarım</span>
-            <span class="skill-tag" data-i18n="s_pcb">PCB Tasarımı</span>
-            <span class="skill-tag" data-i18n="s_power">Güç Yönetimi</span>
+            <span class="skill-tag" data-i18n="s_avionics">Avionics Design</span>
+            <span class="skill-tag" data-i18n="s_schematic">Schematic Design</span>
+            <span class="skill-tag" data-i18n="s_pcb">PCB Design</span>
+            <span class="skill-tag" data-i18n="s_power">Power Management</span>
             <span class="skill-tag">EMI/EMC Testing</span>
-            <span class="skill-tag" data-i18n="s_test">Test Sistemleri</span>
-            <span class="skill-tag" data-i18n="s_doc">Teknik Dokümantasyon</span>
+            <span class="skill-tag" data-i18n="s_test">Test Systems</span>
+            <span class="skill-tag" data-i18n="s_doc">Technical Documentation</span>
           </div>
         </div>
 
-        <div class="skill-group glass-card reveal visible" id="skill-sw">
+        <div class="skill-group glass-card reveal" id="skill-sw">
           <div class="skill-group-header">
             <span class="skill-group-icon">💻</span>
-            <h3 data-i18n="skill_sw_title" class="">Yazılım ve Algoritmalar</h3>
+            <h3 data-i18n="skill_sw_title">Software &amp; Algorithms</h3>
           </div>
           <div class="skill-tags">
-            <span class="skill-tag" data-i18n="s_ml">Makine Öğrenmesi</span>
-            <span class="skill-tag" data-i18n="s_cv">Görüntü İşleme</span>
-            <span class="skill-tag" data-i18n="s_ctrl">Kontrol Sistemleri</span>
-            <span class="skill-tag" data-i18n="s_fusion">Sensör Füzyonu</span>
+            <span class="skill-tag" data-i18n="s_ml">Machine Learning</span>
+            <span class="skill-tag" data-i18n="s_cv">Image Processing</span>
+            <span class="skill-tag" data-i18n="s_ctrl">Control Systems</span>
+            <span class="skill-tag" data-i18n="s_fusion">Sensor Fusion</span>
             <span class="skill-tag">Embedded Linux</span>
             <span class="skill-tag">RTOS</span>
           </div>
         </div>
 
-        <div class="skill-group glass-card reveal visible" id="skill-proto">
+        <div class="skill-group glass-card reveal" id="skill-proto">
           <div class="skill-group-header">
             <span class="skill-group-icon">🛠️</span>
-            <h3 data-i18n="skill_tools_title" class="">Araçlar ve Yazılımlar</h3>
+            <h3 data-i18n="skill_tools_title">Tools &amp; Software</h3>
           </div>
           <div class="skill-tags">
             <span class="skill-tag">Altium Designer</span>
@@ -427,10 +445,10 @@
           </div>
         </div>
 
-        <div class="skill-group glass-card reveal visible" id="skill-lang">
+        <div class="skill-group glass-card reveal" id="skill-lang">
           <div class="skill-group-header">
             <span class="skill-group-icon">⚡</span>
-            <h3 data-i18n="skill_prog_title" class="">Programlama Dilleri</h3>
+            <h3 data-i18n="skill_prog_title">Programming Languages</h3>
           </div>
           <div class="skill-tags">
             <span class="skill-tag skill-tag-highlight">C / C++</span>
@@ -438,7 +456,7 @@
           </div>
           <div class="skill-group-header" style="margin-top:1.2rem;">
             <span class="skill-group-icon">📡</span>
-            <h3 data-i18n="skill_proto_title" class="">Protokoller</h3>
+            <h3 data-i18n="skill_proto_title">Protocols</h3>
           </div>
           <div class="skill-tags">
             <span class="skill-tag">SPI</span><span class="skill-tag">I2C</span>
@@ -448,10 +466,10 @@
           </div>
         </div>
 
-        <div class="skill-group glass-card reveal visible" id="skill-micro">
+        <div class="skill-group glass-card reveal" id="skill-micro">
           <div class="skill-group-header">
             <span class="skill-group-icon">🖥️</span>
-            <h3 data-i18n="skill_mcu_title" class="">Mikrodenetleyiciler ve Platformlar</h3>
+            <h3 data-i18n="skill_mcu_title">Microcontrollers &amp; Platforms</h3>
           </div>
           <div class="skill-tags">
             <span class="skill-tag">STM32H7</span><span class="skill-tag">STM32F103</span>
@@ -460,16 +478,16 @@
           </div>
         </div>
 
-        <div class="skill-group glass-card reveal visible" id="skill-soft">
+        <div class="skill-group glass-card reveal" id="skill-soft">
           <div class="skill-group-header">
             <span class="skill-group-icon">🤝</span>
-            <h3 data-i18n="skill_soft_title" class="">Kişisel Yetenekler</h3>
+            <h3 data-i18n="skill_soft_title">Soft Skills</h3>
           </div>
           <div class="skill-tags">
-            <span class="skill-tag" data-i18n="s_lead">Takım Liderliği</span>
-            <span class="skill-tag" data-i18n="s_prob">Problem Çözme</span>
-            <span class="skill-tag" data-i18n="s_detail">Detay Odaklılık</span>
-            <span class="skill-tag" data-i18n="s_multi">Multidisipliner Çalışma</span>
+            <span class="skill-tag" data-i18n="s_lead">Team Leadership</span>
+            <span class="skill-tag" data-i18n="s_prob">Problem Solving</span>
+            <span class="skill-tag" data-i18n="s_detail">Detail-Oriented</span>
+            <span class="skill-tag" data-i18n="s_multi">Multidisciplinary</span>
           </div>
         </div>
 
@@ -480,19 +498,19 @@
   <!-- ─── CONTACT ─── -->
   <section id="contact">
     <div class="container">
-      <div class="section-header reveal visible">
-        <span class="section-tag" data-i18n="contact_tag">05 / İletişim</span>
-        <h2 class="section-title" data-i18n="contact_title">İletişime Geç</h2>
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="contact_tag">05 / Contact</span>
+        <h2 class="section-title" data-i18n="contact_title">Get in Touch</h2>
       </div>
-      <div class="contact-wrapper reveal visible">
+      <div class="contact-wrapper reveal">
         <div class="contact-text">
-          <p data-i18n="contact_desc" class="">Havacılık, gömülü sistemler ve donanım tasarımı alanlarında fırsatlara açığım. Benimle iletişime geçmekten çekinmeyin.</p>
+          <p data-i18n="contact_desc">I am open to exciting opportunities in aerospace, embedded systems, and hardware design. Feel free to reach out.</p>
         </div>
         <div class="contact-cards">
           <a href="mailto:ysfmrakdeniz@gmail.com" class="contact-card glass-card" id="contact-email-card">
             <div class="contact-card-icon">✉️</div>
             <div class="contact-card-info">
-              <span class="contact-card-label" data-i18n="contact_email_label">E-posta</span>
+              <span class="contact-card-label" data-i18n="contact_email_label">Email</span>
               <span class="contact-card-value">ysfmrakdeniz@gmail.com</span>
             </div>
             <div class="contact-card-arrow">→</div>
@@ -500,7 +518,7 @@
           <a href="tel:+905367094791" class="contact-card glass-card" id="contact-phone-card">
             <div class="contact-card-icon">📞</div>
             <div class="contact-card-info">
-              <span class="contact-card-label" data-i18n="contact_phone_label">Telefon</span>
+              <span class="contact-card-label" data-i18n="contact_phone_label">Phone</span>
               <span class="contact-card-value">+90 536 709 4791</span>
             </div>
             <div class="contact-card-arrow">→</div>
@@ -508,8 +526,8 @@
           <div class="contact-card glass-card no-link" id="contact-location-card">
             <div class="contact-card-icon">📍</div>
             <div class="contact-card-info">
-              <span class="contact-card-label" data-i18n="contact_loc_label">Konum</span>
-              <span class="contact-card-value" data-i18n="contact_loc_val">Düzce, Türkiye</span>
+              <span class="contact-card-label" data-i18n="contact_loc_label">Location</span>
+              <span class="contact-card-value" data-i18n="contact_loc_val">Düzce, Turkey</span>
             </div>
           </div>
         </div>
@@ -520,24 +538,24 @@
   <!-- ─── PROJECT MODAL ─── -->
   <div id="project-modal" class="modal">
     <div class="modal-content glass-card">
-      <span class="close-modal">×</span>
-      <img id="modal-img" src="https://via.placeholder.com/800x600/0c1525/00d2ff?text=TEKNOFEST+Air+Defense" alt="Project Image" class="">
+      <span class="close-modal">&times;</span>
+      <img id="modal-img" src="" alt="Project Image" />
     </div>
   </div>
 
   <!-- ─── ADMIN LOGIN MODAL ─── -->
-  <div id="admin-login-modal" class="modal" style="display: none;">
+  <div id="admin-login-modal" class="modal">
     <div class="modal-content glass-card" style="max-width: 400px; text-align: center;">
-      <span class="close-admin-modal" style="float: right; cursor: pointer; font-size: 1.5rem;">×</span>
+      <span class="close-admin-modal" style="float: right; cursor: pointer; font-size: 1.5rem;">&times;</span>
       <h2 style="margin-bottom: 1rem;">Geliştirici Girişi</h2>
-      <input type="password" id="admin-password" placeholder="Şifre" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.5); color: #fff;">
+      <input type="password" id="admin-password" placeholder="Şifre" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.5); color: #fff;" />
       <button id="admin-login-btn" class="btn btn-primary" style="width: 100%;">Giriş Yap</button>
       <p id="admin-error-msg" style="color: #ff4b4b; display: none; margin-top: 1rem;">Hatalı şifre!</p>
     </div>
   </div>
 
   <!-- ─── FLOATING ADMIN PANEL ─── -->
-  <div id="admin-control-panel" class="glass-card" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; padding: 15px; border: 2px solid rgb(59, 130, 246);">
+  <div id="admin-control-panel" class="glass-card" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; padding: 15px; border: 2px solid #3b82f6;">
     <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: #3b82f6;">Admin Paneli</h3>
     <p style="font-size: 0.85rem; margin-bottom: 15px; opacity: 0.8;">Metinlere tıklayıp düzenleyin. Görselleri sürükleyip bırakarak değiştirin.</p>
     <button id="admin-export-btn" class="btn btn-primary" style="width: 100%; font-size: 0.9rem;">Değişiklikleri İndir</button>
@@ -546,12 +564,11 @@
   <!-- ─── FOOTER ─── -->
   <footer>
     <div class="footer-content">
-      <span data-i18n="footer_copy" class="">© 2026 Yusuf Emre Akdeniz — Mekatronik Mühendisi</span>
+      <span data-i18n="footer_copy">© 2025 Yusuf Emre Akdeniz — Mechatronics Engineer</span>
     </div>
   </footer>
 
   <script src="script.js"></script>
   <script src="admin.js"></script>
-
-
-</body></html>
+</body>
+</html>
