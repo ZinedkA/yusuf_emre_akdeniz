@@ -501,11 +501,9 @@ svg { width: 1em; height: 1em; }
 }
 
 .anim-rocket {
-  bottom: -20%;
-  left: 40%;
+  bottom: -10%;
+  left: 20%;
   animation: launchRocket 8s ease-in infinite;
-  rotate: -45deg;
-  display: inline-block; /* İkonun kendi etrafında düzgün dönmesi için gereklidir */
 }
 
 .anim-satellite {
@@ -521,9 +519,9 @@ svg { width: 1em; height: 1em; }
 }
 
 @keyframes launchRocket {
-  0% { transform: translate(0, 0) rotate(45deg); opacity: 0; }
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
   20% { opacity: 1; }
-  100% { transform: translate(250px, -350px) rotate(45deg); opacity: 0; }
+  100% { transform: translate(250px, -350px) rotate(0deg); opacity: 0; }
 }
 
 @keyframes orbitSatellite {
