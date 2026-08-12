@@ -504,6 +504,8 @@ svg { width: 1em; height: 1em; }
   bottom: -10%;
   left: 20%;
   animation: launchRocket 8s ease-in infinite;
+  rotate: -45deg;
+  display: inline-block; /* İkonun kendi etrafında düzgün dönmesi için gereklidir */
 }
 
 .anim-satellite {
