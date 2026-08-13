@@ -495,7 +495,13 @@ document.querySelectorAll('.project-card.reveal').forEach((card, i) => {
       if (e.target.isContentEditable) return;
 
       const title = card.querySelector('h3') ? card.querySelector('h3').innerHTML : '';
-      const desc = card.querySelector('.project-desc') ? card.querySelector('.project-desc').innerHTML : '';
+      
+      let desc = '';
+      if (card.querySelector('.project-desc-long')) {
+        desc = card.querySelector('.project-desc-long').innerHTML;
+      } else if (card.querySelector('.project-desc')) {
+        desc = card.querySelector('.project-desc').innerHTML;
+      }
       
       if(modalTitle) modalTitle.innerHTML = title;
       if(modalDesc) modalDesc.innerHTML = desc;

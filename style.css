@@ -1023,8 +1023,8 @@ footer {
 
 .close-modal {
   position: absolute;
-  top: -15px;
-  right: -15px;
+  top: 15px;
+  right: 15px;
   width: 35px;
   height: 35px;
   background: var(--bg-card);
