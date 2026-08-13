@@ -6,5 +6,4 @@ https://zinedka.github.io/yusuf_emre_akdeniz/
 
 
 
-beta 20260806
-beta 20260812
+rev 1.2 20260806

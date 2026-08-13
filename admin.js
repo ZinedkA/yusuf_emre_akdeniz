@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let isAdminMode = false;
 
-  // Keybind to open login: Ctrl + Shift + A 
+  // Keybind to open login: Ctrl + Shift + A
   document.addEventListener('keydown', (e) => {
     if (e.ctrlKey && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
       e.preventDefault();
