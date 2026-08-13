@@ -308,7 +308,7 @@ const TRANSLATIONS = {
 
 
 /* ════════════════════════════════════════════
-   2. THEME TOGGLE — dark (default)  /  light
+   2. THEME TOGGLE — dark (default) / light
 ════════════════════════════════════════════ */
 (function initTheme() {
   const btn  = document.getElementById('theme-toggle');
@@ -471,45 +471,69 @@ document.querySelectorAll('.project-card.reveal').forEach((card, i) => {
 ════════════════════════════════════════════ */
 (function initModal() {
   const modal = document.getElementById('project-modal');
-  const modalImg = document.getElementById('modal-img');
   const closeBtn = document.querySelector('.close-modal');
   const projectCards = document.querySelectorAll('.project-card');
-
-  // Placeholder images for projects - the user can change these later
-  const projectImages = {
-    'proj-irec': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=IREC+2025',
-    'proj-tnf-high': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=TEKNOFEST+High+Altitude',
-    'proj-tnf-sub': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=TEKNOFEST+Underwater',
-    'proj-tnf-air': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=TEKNOFEST+Air+Defense',
-    'proj-tnf-mid': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=TEKNOFEST+Mid+Altitude',
-    'proj-silent': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=Silent+Track',
-    'proj-baykus': 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=Baykus+Guidance+Kit'
-  };
+  const modalTitle = document.getElementById('modal-title');
+  const modalDesc = document.getElementById('modal-desc');
+  const modalGallery = document.getElementById('modal-gallery');
 
   projectCards.forEach(card => {
-    card.addEventListener('click', () => {
-      const projId = card.id;
-      // Use the mapped image or a generic placeholder if not found
-      const imgSrc = projectImages[projId] || 'https://via.placeholder.com/800x600/0c1525/00d2ff?text=Project+Image';
+    // Inject Background Layer from first image
+    const imagesContainer = card.querySelector('.project-images');
+    if (imagesContainer) {
+      const firstImage = imagesContainer.querySelector('img');
+      if (firstImage) {
+        const bg = document.createElement('div');
+        bg.className = 'project-card-bg';
+        bg.style.backgroundImage = `url('${firstImage.getAttribute('src')}')`;
+        card.prepend(bg);
+      }
+    }
+
+    card.addEventListener('click', (e) => {
+      // Don't open modal if they clicked on the admin panel inputs or editables
+      if (e.target.isContentEditable) return;
+
+      const title = card.querySelector('h3') ? card.querySelector('h3').innerHTML : '';
+      const desc = card.querySelector('.project-desc') ? card.querySelector('.project-desc').innerHTML : '';
       
-      modalImg.src = imgSrc;
+      if(modalTitle) modalTitle.innerHTML = title;
+      if(modalDesc) modalDesc.innerHTML = desc;
+      
+      if (modalGallery) {
+        modalGallery.innerHTML = ''; // clear old
+        if (imagesContainer) {
+          const imgs = imagesContainer.querySelectorAll('img');
+          imgs.forEach(img => {
+            const clone = document.createElement('img');
+            clone.src = img.getAttribute('src');
+            clone.style.width = '100%';
+            clone.style.height = 'auto';
+            clone.style.borderRadius = '8px';
+            clone.style.objectFit = 'contain';
+            clone.style.maxHeight = '400px';
+            clone.style.backgroundColor = 'rgba(0,0,0,0.2)';
+            modalGallery.appendChild(clone);
+          });
+        }
+      }
+      
       modal.classList.add('show');
     });
   });
 
-  // Close modal when clicking the close button
-  closeBtn.addEventListener('click', () => {
-    modal.classList.remove('show');
-  });
+  if(closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('show');
+    });
+  }
 
-  // Close modal when clicking outside the image
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.remove('show');
     }
   });
 
-  // Close modal on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('show')) {
       modal.classList.remove('show');
