@@ -22,7 +22,7 @@
   <!-- ─── NAVIGATION ─── -->
   <nav id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">YEA<span class="dot">.</span></a>
+      <a href="#hero" class="nav-logo">YEA<span class="dot">.</span><sup class="beta-badge">Beta</sup></a>
       <ul class="nav-links">
         <li><a href="#about"      id="nav-about"      data-i18n="nav_about">About</a></li>
         <li><a href="#experience" id="nav-experience" data-i18n="nav_experience">Experience</a></li>
@@ -135,10 +135,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
               ysfmrakdeniz@gmail.com
             </a>
-            <a href="tel:+905367094791" class="about-link" id="about-phone-link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.64A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-              +90 536 709 4791
-            </a>
+            <span class="about-link no-hover" style="display: none;">
             <span class="about-link no-hover">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
               <span data-i18n="about_location">Düzce, Turkey</span>
@@ -295,7 +292,7 @@
               Achieved full score on payload design at the prestigious US competition.
               Built a 3-node LoRa communication architecture transmitting GPS, IMU, &amp; message data between Ground Station, Transmitter, and Payload.
             </p>
-            <div class="project-desc-long" style="display: none;">
+            <div class="project-desc-long" data-i18n="proj1_desc_long" style="display: none;">
               ABD'de gerçekleştirilen Uluslararası Roket Mühendisliği Yarışması'nda (IREC) yer alan roket sisteminin görev yükü modülü geliştirilmiştir. Görev yükünün mekanik yapısı ve aviyonik sistemlerinin uçtan uca tasarımı, prototiplenmesi ve üretim süreçleri tamamlanmıştır. Sistem, yarışma hakemlerinden tam puan almış ve planlanan uçuş görevlerini hata payı sınırları içinde tamamlamıştır. Proje kapsamında kesintisiz veri aktarımı sağlamak amacıyla üç noktalı bir LoRa haberleşme mimarisi tasarlanmıştır. Bu mimari; yer istasyonu, havada bulunan iletimci (röle) modül ve ana görev yükü arasında çift yönlü veri akışı sağlamaktadır. Uçuş esnasında görev yükü üzerinde bulunan sensörlerden elde edilen Küresel Konumlama Sistemi (GPS) koordinatları, Ataletsel Ölçüm Birimi (IMU) verileri ve sistem durum mesajları gerçek zamanlı olarak yer istasyonuna aktarılmıştır. Bu altyapı, telemetri verilerinin yüksek irtifada ve zorlu radyo frekansı koşullarında kayıpsız iletilmesini sağlamak üzere optimize edilmiştir. Ek olarak, görev yükünün roket içi mekanik entegrasyonu yüksek ivmelenme ve titreşim koşullarına dayanacak şekilde üretilmiştir.
             </div>
             <div class="project-images" style="display: none;">
@@ -317,7 +314,7 @@
             <p class="project-desc" data-i18n="proj2_desc">
               Designed &amp; manufactured the payload avionics system. Developed algorithm that estimates landing position from IMU data and transmits telemetry to the ground station in real-time.
             </p>
-            <div class="project-desc-long" style="display: none;">
+            <div class="project-desc-long" data-i18n="proj2_desc_long" style="display: none;">
               TEKNOFEST Yüksek İrtifa Roket Yarışması kapsamında, Aviyonik Takım Kaptanı olarak roket görev yükünün donanım ve yazılım sistemlerinin geliştirilmesine liderlik edilmiştir. Görev yükünün aviyonik kart tasarımı, gömülü yazılım geliştirme aşamaları ve üretim süreçleri bizzat yürütülmüştür. Bu projenin temel özgün görevi, uydu konumlama verisine bağımlı kalmadan uçuş yörüngesini ve tahmini iniş noktasını hesaplayabilen bir sistemin geliştirilmesidir. Sistem, Ataletsel Ölçüm Birimi (IMU) üzerinden alınan ivme ve açısal hız verilerini kullanarak anlık konum, hız ve yönelim hesaplamaları gerçekleştirmektedir. Elde edilen uçuş dinamiği parametreleri algoritmik olarak işlenmiş ve roketin paraşüt açılma sonrasındaki balistik düşüş profili modellenerek tahmini iniş noktası koordinatları türetilmiştir. Hesaplanan bu koordinatlar, standart uçuş telemetri verileri (irtifa, sıcaklık, basınç, batarya durumu) ile paketlenerek yer istasyonuna kesintisiz bir şekilde aktarılmıştır. Uçuş testleri esnasında sistem yüksek doğrulukla çalışarak kurtarma ekiplerinin roketin düştüğü bölgeyi hızlıca tespit etmesine olanak tanımıştır.
             </div>
             <div class="project-images" style="display: none;">
@@ -337,7 +334,7 @@
             <p class="project-desc" data-i18n="proj3_desc">
               Developed the control board for an autonomous underwater rocket vehicle. Analog sensor signals digitised via OpAmp &amp; ADC. Propulsion system built with BLDC and servo motors.
             </p>
-            <div class="project-desc-long" style="display: none;">
+            <div class="project-desc-long" data-i18n="proj3_desc_long" style="display: none;">
               TEKNOFEST Sualtı Sistemleri yarışması için tasarlanan ve tamamen otonom olarak görev yapabilen Sualtı Roket Aracının ana uçuş ve dalış kontrol kartı tasarlanmıştır. Yarışma şartnamesinde belirtilen derinlik, sızdırmazlık ve görev isterlerini karşılamak üzere geliştirilen sistemde, çevresel verileri okumak için analog sensörler kullanılmıştır. Su altı ortamının getirdiği elektriksel gürültü ve düşük sinyal seviyeleri sorununu çözmek amacıyla, sensörlerden elde edilen ham analog sinyaller işlemsel yükselteç (Opamp) devreleri üzerinden geçirilerek filtrelenmiş ve genlikleri ayarlanmıştır. Ardından, Analog-Dijital Dönüştürücü (ADC) birimleri kullanılarak bu sinyallerin yüksek çözünürlüklü dijital verilere dönüşümü sağlanmıştır. Aracın tahrik ve yönlendirme sistemleri, Fırçasız DC (BLDC) motorlar ve su altı koşullarına uygun servo motorlar kullanılarak inşa edilmiştir. Geliştirilen kontrol kartı, sensör verilerini işleyerek bu motorları otonom seyrüsefer algoritmalarına uygun olarak sürmüştür. Üretilen roket, deniz koşullarında başarıyla test edilmiş ve yarışmada finalist statüsüne ulaşmıştır.
             </div>
             <div class="project-images" style="display: none;">
@@ -357,7 +354,7 @@
             <p class="project-desc" data-i18n="proj4_desc">
               Balloon target detection using OpenCV &amp; Haar Cascade trained model. Built autonomous tracking &amp; termination algorithm with stepper and servo motors.
             </p>
-            <div class="project-desc-long" style="display: none;">
+            <div class="project-desc-long" data-i18n="proj4_desc_long" style="display: none;">
               TEKNOFEST Hava Savunma Sistemleri Yarışması'nda yer alan projenin bilgisayarlı görü yazılımları ile elektronik sistem entegrasyonu süreçleri yürütülmüştür. Geliştirilen sistemin temel amacı, havada bulunan hedef nesneleri (balonları) otonom olarak tespit etmek, takip etmek ve etkisiz hale getirmektir. Bu doğrultuda, nesne tespiti için OpenCV kütüphanesi ve Haar Cascade sınıflandırıcı algoritması kullanılmıştır. Hedef balonların farklı ışık ve arka plan koşullarındaki görüntüleri toplanarak veri seti oluşturulmuş ve makine öğrenmesi modeli eğitilmiştir. Görüntü işleme algoritmasından elde edilen hedef koordinat ve alan verileri fiziksel yönlendirme sistemine aktarılmıştır. Yönlendirme mekanizması, step ve servo motorlar kullanılarak iki eksenli bir hareket kabiliyeti sağlayacak şekilde tasarlanmıştır. Geliştirilen kapalı çevrim kontrol algoritması, kamera vizöründeki hedefin merkeze alınması için motorlara hassas konum komutları göndererek otonom hedef takibi işlevini yerine getirmiştir. Sistem stabil şekilde çalışarak takımın finalist olmasını sağlamıştır.
             </div>
             <div class="project-tags">
@@ -374,7 +371,7 @@
             <p class="project-desc" data-i18n="proj5_desc">
               As team captain, designed the STM32-based MOSFET-triggered Flight Control Computer and payload computer managing recovery, separation, and communication systems.
             </p>
-            <div class="project-desc-long" style="display: none;">
+            <div class="project-desc-long" data-i18n="proj5_desc_long" style="display: none;">
               Takım kaptanlığı görevinin yürütüldüğü bu projede, roketin tüm aviyonik, haberleşme ve ateşleme işlevlerini yöneten ana uçuş kontrol bilgisayarı ve ikincil görev yükü bilgisayarının elektronik donanım tasarımları gerçekleştirilmiştir. Uçuş kontrol bilgisayarı, STM32 serisi mikrodenetleyiciler tabanlı olarak tasarlanmıştır. Roketin uçuş profilinin kritik aşamalarından olan ayrılma (seperasyon) ve kurtarma (paraşüt açma) sistemlerinin aktivasyonu için güvenilir bir ateşleme devresi kurulmuştur. Bu devre, sensörlerden gelen irtifa ve ivme verilerini işleyen algoritmaların ürettiği sinyallerle MOSFET bileşenlerini tetikleyerek piroteknik mekanizmaları belirlenen irtifalarda doğru bir şekilde çalıştırmıştır. Sistem ayrıca uçuş telemetrisini yer istasyonuna modüle ederek iletme işlevini yerine getirmiştir. Elektronik tasarım ve yazılım geliştirmeye ek olarak, roketin yapısal bütünlüğünü sağlayan mekanik tasarım süreçlerine ve aerodinamik gövdenin kompozit üretim aşamalarına katkı sağlanmıştır. Kritik sistemlerin yedekli mimaride tasarlanması uçuş başarısını artırmıştır.
             </div>
             <div class="project-images" style="display: none;">
@@ -398,7 +395,7 @@
             <p class="project-desc" data-i18n="proj6_desc">
               GPS-independent positioning and route tracking using SSIM &amp; INS technologies. Finalist at the Düzce-Bolu R&amp;D Project Market.
             </p>
-            <div class="project-desc-long" style="display: none;">
+            <div class="project-desc-long" data-i18n="proj6_desc_long" style="display: none;">
               Proje yürütücülüğü üstlenilen SilentTrack sistemi, Küresel Konumlama Sistemi (GPS) sinyallerinin kesildiği veya ulaşılamadığı ortamlarda hava ve kara araçlarının kesintisiz konum tespiti yapabilmesi ve otonom rota takibi gerçekleştirebilmesi amacıyla geliştirilmiştir. Sistem, Yapısal Benzerlik İndeksi Ölçümü (SSIM) kullanan görüntü işleme tabanlı seyrüsefer teknikleri ile Ataletsel Seyrüsefer Sistemini (INS) birleştiren bir sensör füzyonu mimarisine dayanmaktadır. Seyir esnasında araç üzerindeki kameradan alınan anlık görüntüler, önceden sisteme yüklenmiş harita veya uydu görüntüleri ile SSIM algoritması kullanılarak karşılaştırılmakta ve görsel konum referansları elde edilmektedir. Eş zamanlı olarak, Ataletsel Ölçüm Birimi (IMU) sensörlerinden alınan ivme ve jiroskop verileri entegre edilerek INS üzerinden ölü hesaplama (dead reckoning) işlemi uygulanmaktadır. İki veri setinin füzyonu sayesinde sürüklenme (drift) hatası minimize edilmiş, yüksek doğruluklu konum ve yönelim tahmini elde edilmiştir. Proje, Düzce Bolu Ar-Ge Proje Pazarı'nda finale kalmıştır.
             </div>
             <div class="project-tags">
@@ -415,7 +412,7 @@
             <p class="project-desc" data-i18n="proj7_desc">
               ML-powered target recognition and tracking guidance kit designed to counter Flare &amp; Chaff countermeasures. Achieved <strong>&gt;95% accuracy</strong> on clean images and <strong>&gt;80%</strong> under countermeasures.
             </p>
-            <div class="project-desc-long" style="display: none;">
+            <div class="project-desc-long" data-i18n="proj7_desc_long" style="display: none;">
               Baykuş Güdüm Kiti, aerodinamik uçuş kontrol yüzeyleri ve akıllı sensörler entegre edilerek, standart ve güdüm kabiliyeti bulunmayan serbest düşüşlü mühimmatları akıllı mühimmat formuna dönüştürmek üzere tasarlanmış bir bitirme projesidir. Sistemin çekirdeğini, makine öğrenmesi ve bilgisayarlı görü algoritmalarına dayanan elektro-optik hedef tanıma ve takip modülü oluşturmaktadır. Algoritma, hedefin görsel imzasını tanımlayarak otonom yönelme komutları üretmektedir. Projenin en belirgin teknik hedefi, elektronik harp ve fiziksel karşı tedbirlere karşı direnç göstermesidir. Hava araçları tarafından fırlatılan ısı yayıcı (flare) ve radar karıştırıcı (chaff) gibi önleyici sahte hedefleri asıl hedeften ayırt edebilecek özellik çıkarım modelleri eğitilmiştir. Simülasyon ve yazılım testlerinde, makine öğrenmesi modelinin karşı tedbir içermeyen temiz görüntülerde hedefi doğru tespit ve takip etme oranı %95'in üzerinde ölçülmüştür. Görüntü çerçevesine flare veya chaff gibi yanıltıcı unsurların dahil edildiği senaryolarda ise modelin doğruluğu %80 seviyesinin üzerinde kalmıştır.
             </div>
             <div class="project-images" style="display: none;">
@@ -556,14 +553,6 @@
             <div class="contact-card-info">
               <span class="contact-card-label" data-i18n="contact_email_label">Email</span>
               <span class="contact-card-value">ysfmrakdeniz@gmail.com</span>
-            </div>
-            <div class="contact-card-arrow">→</div>
-          </a>
-          <a href="tel:+905367094791" class="contact-card glass-card" id="contact-phone-card">
-            <div class="contact-card-icon">📞</div>
-            <div class="contact-card-info">
-              <span class="contact-card-label" data-i18n="contact_phone_label">Phone</span>
-              <span class="contact-card-value">+90 536 709 4791</span>
             </div>
             <div class="contact-card-arrow">→</div>
           </a>
