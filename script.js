@@ -15,7 +15,7 @@ const TRANSLATIONS = {
 
     // Hero
     hero_badge:         'Available for opportunities',
-    hero_desc:          'Mechatronics Engineering MSc student at Düzce University. Seeking new opportunities in aviation, defense, and autonomous systems with over 4 years of avionics and rocket project experience, and 1+ year of industry experience.',
+    hero_desc: 'Düzce Üniversitesi Mekatronik Mühendisliği Yüksek Lisans öğrencisi. 4 yılı aşkın aviyonik ve roket projesi, 1 yıl üzeri sektör deneyimimle havacılık, savunma ve otonom sistemler alanında yeni fırsatlar arıyorum.',
     hero_btn_projects:  'View Projects',
     hero_btn_contact:   'Get in Touch',
     stat_experience:    'Years Experience',
@@ -23,17 +23,17 @@ const TRANSLATIONS = {
 
     // Typewriter texts
     typewriter_texts: [
-      'Mechatronics Engineer',
-      'Hardware Design Engineer',
-      'Embedded Systems Developer',
+      'Mekatronik Mühendisi',
+      'Donanım Tasarım Mühendisi',
+      'Gömülü Sistemler Geliştiricisi',
     ],
 
     // About
     about_tag:   '01 / About',
     about_title: 'Who I Am',
-    about_p1:    "I'm a <strong>Mechatronics Engineering MSc student</strong> at Düzce University with over 4 years of hands-on experience in avionics system design, rocket technologies, and aerospace hardware development.",
-    about_p2:    "As an <strong>Avionics Team Captain and System Designer</strong> at TEKNOFEST and IREC competitions, I have led projects from concept to successful operation — designing flight computers, telemetry systems, and autonomous control cards.",
-    about_p3:    "Currently working as a <strong>Hardware Design Engineer</strong> at Soylu Aerospace, developing STM32H7-based autonomous flight control boards for VTOL and drone platforms following MIL-STD-704 and DO-160 standards.",
+    about_p1: "I am continuing my master's degree in Mechatronics Engineering at Düzce University. I have over four years of hands-on experience in avionics system design, rocket technologies, and aerospace hardware development.",
+    about_p2: "By taking on the responsibilities of Avionics Team Captain and System Designer in TEKNOFEST and IREC competitions, I managed the processes of the projects from the concept stage to operation. Within the scope of these duties, I designed flight computers, telemetry systems, and autonomous control boards.",
+    about_p3: "Finally, I worked as a Hardware Design Engineer at Soylu Aerospace. I carried out the development processes of STM32H7-based autonomous flight control boards and various systems in accordance with MIL-STD-704 and DO-160 standards.",
     about_location: 'Düzce, Turkey',
     edu_msc_degree: 'MSc — Mechatronics Engineering',
     edu_msc_thesis: 'Thesis: Early Fault Detection in Aircraft via Machine Learning',
@@ -75,6 +75,7 @@ const TRANSLATIONS = {
     // Projects
     proj_tag:   '03 / Projects',
     proj_title: 'Competition & Projects',
+    proj_details_btn: 'See Details',
     proj_details_btn: 'See Details',
     proj1_badge: '🏆 Full Score',
     proj1_title: 'IREC 2025 & 2026',
@@ -148,7 +149,7 @@ const TRANSLATIONS = {
     proj7_desc_long: 'The Baykuş Guidance Kit is a capstone project designed to transform standard, unguided free-fall munitions into smart munitions by integrating aerodynamic flight control surfaces and smart sensors. The core of the system is the electro-optical target recognition and tracking module based on machine learning and computer vision algorithms. The algorithm generates autonomous targeting commands by identifying the visual signature of the target. The most prominent technical goal of the project is to demonstrate resistance to electronic warfare and physical countermeasures. Feature extraction models were trained to distinguish preventive false targets like heat emitters (flares) and radar jammers (chaff) launched by aircraft from the actual target. In simulation and software tests, the machine learning model\'s correct target detection and tracking rate on clean images without countermeasures was measured at over 95%. In scenarios where deceptive elements such as flares or chaff were included in the image frame, the model\'s accuracy remained above 80%.',
 
     // Footer
-    footer_copy: '© 2026 Yusuf Emre Akdeniz — Mechatronics Engineer',
+    footer_copy: '© 2026 Yusuf Emre Akdeniz - Mekatronik Mühendisi',
   },
 
   tr: {
@@ -162,7 +163,7 @@ const TRANSLATIONS = {
 
     // Hero
     hero_badge:         'Fırsatlara açığım',
-    hero_desc:          'Düzce Üniversitesi Mekatronik Mühendisliği Yüksek Lisans öğrencisi. 4 yılı aşkın aviyonik ve roket projesi, 1 yıl üzeri sektör deneyimimle havacılık, savunma ve otonom sistemler alanında yeni fırsatlar arıyorum.'te Aviyonik Takım Kaptanı. İHA, roket ve otonom sistemler için donanım tasarımcısı.',
+    hero_desc:          'Düzce Üniversitesi Mekatronik Mühendisliği Yüksek Lisans öğrencisi. TEKNOFEST ve IREC\'te Aviyonik Takım Kaptanı. İHA, roket ve otonom sistemler için donanım tasarımcısı.',
     hero_btn_projects:  'Projeleri Gör',
     hero_btn_contact:   'İletişime Geç',
     stat_experience:    'Yıllık Deneyim',
@@ -170,17 +171,18 @@ const TRANSLATIONS = {
 
     // Typewriter texts
     typewriter_texts: [
-      'Mekatronik Mühendisi',
       'Donanım Tasarım Mühendisi',
-      'Gömülü Sistemler Geliştiricisi',
+      'Aviyonik Takım Kaptanı',
+      'Gömülü Sistem Geliştirici',
+      'Roket Sistemleri Tasarımcısı',
     ],
 
     // About
     about_tag:   '01 / Hakkımda',
     about_title: 'Ben Kimim',
-    about_p1:    'I am continuing my master\'s degree in Mechatronics Engineering at Düzce University. I have over four years of hands-on experience in avionics system design, rocket technologies, and aerospace hardware development.'nde <strong>Mekatronik Mühendisliği Yüksek Lisans</strong> öğrencisiyim. Aviyonik sistem tasarımı, roket teknolojileri ve havacılık donanım geliştirme alanlarında 4 yılı aşkın uygulamalı deneyimim bulunmaktadır.',
-    about_p2:    'By taking on the responsibilities of Avionics Team Captain and System Designer in TEKNOFEST and IREC competitions, I managed the processes of the projects from the concept stage to operation. Within the scope of these duties, I designed flight computers, telemetry systems, and autonomous control boards.',
-    about_p3:    'Finally, I worked as a Hardware Design Engineer at Soylu Aerospace. I carried out the development processes of STM32H7-based autonomous flight control boards and various systems in accordance with MIL-STD-704 and DO-160 standards.'te <strong>Donanım Tasarım Mühendisi</strong> olarak çalışıyor; MIL-STD-704 ve DO-160 standartlarına uygun STM32H7 tabanlı otonom uçuş kontrol kartları geliştiriyorum.',
+    about_p1: 'Düzce Üniversitesi Mekatronik Mühendisliği bölümünde yüksek lisans eğitimime devam ediyorum. Aviyonik sistem tasarımı, roket teknolojileri ve havacılık donanım geliştirme alanlarında dört yılı aşkın uygulamalı tecrübem bulunuyor.',
+    about_p2: 'TEKNOFEST ve IREC yarışmalarında Aviyonik Takım Kaptanı ve Sistem Tasarımcısı sorumluluklarını üstlenerek projelerin konsept aşamasından operasyonuna kadar olan süreçleri yönettim. Bu görevler kapsamında uçuş bilgisayarları, telemetri sistemleri ve otonom kontrol kartları tasarladım.',
+    about_p3: 'Son olarak Soylu Aerospace bünyesinde Donanım Tasarım Mühendisi olarak görev yaptım. MIL-STD-704 ve DO-160 standartlarına uygun, STM32H7 tabanlı otonom uçuş kontrol kartlarını ve çeşitli sistemlerin geliştirme süreçlerini yürüttüm.',
     about_location: 'Düzce, Türkiye',
     edu_msc_degree: 'Y. Lisans — Mekatronik Mühendisliği',
     edu_msc_thesis: 'Tez: Hava Araçlarında Makine Öğrenmesi ile Erken Arıza Tespiti',
@@ -222,6 +224,7 @@ const TRANSLATIONS = {
     // Projects
     proj_tag:   '03 / Projeler',
     proj_title: 'Yarışmalar ve Projeler',
+    proj_details_btn: 'Detayları Gör',
     proj_details_btn: 'Detayları Gör',
     proj1_badge: '🏆 Tam Puan',
     proj1_title: 'IREC 2025 & 2026',
