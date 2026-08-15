@@ -76,6 +76,7 @@ const TRANSLATIONS = {
     // Projects
     proj_tag:   '03 / Projects',
     proj_title: 'Competition & Projects',
+    proj_details_btn: 'See Details',
     proj1_badge: '🏆 Full Score',
     proj1_title: 'IREC 2025 & 2026',
     proj1_sub:   'International Rocket Engineering Competition — USA',
@@ -148,7 +149,7 @@ const TRANSLATIONS = {
     proj7_desc_long: 'The Baykuş Guidance Kit is a capstone project designed to transform standard, unguided free-fall munitions into smart munitions by integrating aerodynamic flight control surfaces and smart sensors. The core of the system is the electro-optical target recognition and tracking module based on machine learning and computer vision algorithms. The algorithm generates autonomous targeting commands by identifying the visual signature of the target. The most prominent technical goal of the project is to demonstrate resistance to electronic warfare and physical countermeasures. Feature extraction models were trained to distinguish preventive false targets like heat emitters (flares) and radar jammers (chaff) launched by aircraft from the actual target. In simulation and software tests, the machine learning model\'s correct target detection and tracking rate on clean images without countermeasures was measured at over 95%. In scenarios where deceptive elements such as flares or chaff were included in the image frame, the model\'s accuracy remained above 80%.',
 
     // Footer
-    footer_copy: '© 2025 Yusuf Emre Akdeniz — Mechatronics Engineer',
+    footer_copy: '© 2026 Yusuf Emre Akdeniz — Mechatronics Engineer',
   },
 
   tr: {
@@ -223,6 +224,7 @@ const TRANSLATIONS = {
     // Projects
     proj_tag:   '03 / Projeler',
     proj_title: 'Yarışmalar ve Projeler',
+    proj_details_btn: 'Detayları Gör',
     proj1_badge: '🏆 Tam Puan',
     proj1_title: 'IREC 2025 & 2026',
     proj1_sub:   'Uluslararası Roket Mühendisliği Yarışması — ABD',
@@ -294,7 +296,7 @@ const TRANSLATIONS = {
     contact_loc_val:    'Düzce, Türkiye',
 
     // Footer
-    footer_copy: '© 2025 Yusuf Emre Akdeniz — Mekatronik Mühendisi',
+    footer_copy: '© 2026 Yusuf Emre Akdeniz — Mekatronik Mühendisi',
   },
 };
 
