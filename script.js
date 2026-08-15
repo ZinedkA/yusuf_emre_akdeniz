@@ -15,7 +15,7 @@ const TRANSLATIONS = {
 
     // Hero
     hero_badge:         'Available for opportunities',
-    hero_desc:          'Mechatronics MSc student at Düzce University. Avionics Team Captain at TEKNOFEST & IREC. Hardware designer for UAVs, rockets, and autonomous systems.',
+    hero_desc:          'Mechatronics Engineering MSc student at Düzce University. Seeking new opportunities in aviation, defense, and autonomous systems with over 4 years of avionics and rocket project experience, and 1+ year of industry experience.',
     hero_btn_projects:  'View Projects',
     hero_btn_contact:   'Get in Touch',
     stat_experience:    'Years Experience',
@@ -23,10 +23,9 @@ const TRANSLATIONS = {
 
     // Typewriter texts
     typewriter_texts: [
+      'Mechatronics Engineer',
       'Hardware Design Engineer',
-      'Avionics Team Captain',
       'Embedded Systems Developer',
-      'Rocket Systems Designer',
     ],
 
     // About
@@ -163,7 +162,7 @@ const TRANSLATIONS = {
 
     // Hero
     hero_badge:         'Fırsatlara açığım',
-    hero_desc:          'Düzce Üniversitesi Mekatronik Mühendisliği Yüksek Lisans öğrencisi. TEKNOFEST ve IREC\'te Aviyonik Takım Kaptanı. İHA, roket ve otonom sistemler için donanım tasarımcısı.',
+    hero_desc:          'Düzce Üniversitesi Mekatronik Mühendisliği Yüksek Lisans öğrencisi. 4 yılı aşkın aviyonik ve roket projesi, 1 yıl üzeri sektör deneyimimle havacılık, savunma ve otonom sistemler alanında yeni fırsatlar arıyorum.'te Aviyonik Takım Kaptanı. İHA, roket ve otonom sistemler için donanım tasarımcısı.',
     hero_btn_projects:  'Projeleri Gör',
     hero_btn_contact:   'İletişime Geç',
     stat_experience:    'Yıllık Deneyim',
@@ -171,18 +170,17 @@ const TRANSLATIONS = {
 
     // Typewriter texts
     typewriter_texts: [
+      'Mekatronik Mühendisi',
       'Donanım Tasarım Mühendisi',
-      'Aviyonik Takım Kaptanı',
-      'Gömülü Sistem Geliştirici',
-      'Roket Sistemleri Tasarımcısı',
+      'Gömülü Sistemler Geliştiricisi',
     ],
 
     // About
     about_tag:   '01 / Hakkımda',
     about_title: 'Ben Kimim',
-    about_p1:    'Düzce Üniversitesi\'nde <strong>Mekatronik Mühendisliği Yüksek Lisans</strong> öğrencisiyim. Aviyonik sistem tasarımı, roket teknolojileri ve havacılık donanım geliştirme alanlarında 4 yılı aşkın uygulamalı deneyimim bulunmaktadır.',
-    about_p2:    'TEKNOFEST ve IREC yarışmalarında <strong>Aviyonik Takım Kaptanı ve Sistem Tasarımcısı</strong> olarak kavramdan başarılı operasyona kadar projeleri yönetim; uçuş bilgisayarları, telemetri sistemleri ve otonom kontrol kartları tasarladım.',
-    about_p3:    'Şu anda Soylu Aerospace\'te <strong>Donanım Tasarım Mühendisi</strong> olarak çalışıyor; MIL-STD-704 ve DO-160 standartlarına uygun STM32H7 tabanlı otonom uçuş kontrol kartları geliştiriyorum.',
+    about_p1:    'I am continuing my master\'s degree in Mechatronics Engineering at Düzce University. I have over four years of hands-on experience in avionics system design, rocket technologies, and aerospace hardware development.'nde <strong>Mekatronik Mühendisliği Yüksek Lisans</strong> öğrencisiyim. Aviyonik sistem tasarımı, roket teknolojileri ve havacılık donanım geliştirme alanlarında 4 yılı aşkın uygulamalı deneyimim bulunmaktadır.',
+    about_p2:    'By taking on the responsibilities of Avionics Team Captain and System Designer in TEKNOFEST and IREC competitions, I managed the processes of the projects from the concept stage to operation. Within the scope of these duties, I designed flight computers, telemetry systems, and autonomous control boards.',
+    about_p3:    'Finally, I worked as a Hardware Design Engineer at Soylu Aerospace. I carried out the development processes of STM32H7-based autonomous flight control boards and various systems in accordance with MIL-STD-704 and DO-160 standards.'te <strong>Donanım Tasarım Mühendisi</strong> olarak çalışıyor; MIL-STD-704 ve DO-160 standartlarına uygun STM32H7 tabanlı otonom uçuş kontrol kartları geliştiriyorum.',
     about_location: 'Düzce, Türkiye',
     edu_msc_degree: 'Y. Lisans — Mekatronik Mühendisliği',
     edu_msc_thesis: 'Tez: Hava Araçlarında Makine Öğrenmesi ile Erken Arıza Tespiti',

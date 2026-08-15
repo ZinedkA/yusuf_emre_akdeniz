@@ -75,8 +75,7 @@
         <span class="typewriter" id="typewriter"></span>
       </div>
       <p class="hero-desc reveal" data-i18n="hero_desc">
-        Mechatronics MSc student at Düzce University. Avionics Team Captain at TEKNOFEST &amp; IREC.
-        Hardware designer for UAVs, rockets, and autonomous systems.
+        Mechatronics Engineering MSc student at Düzce University. Seeking new opportunities in aviation, defense, and autonomous systems with over 4 years of avionics and rocket project experience, and 1+ year of industry experience.
       </p>
       <div class="hero-actions reveal">
         <a href="#projects" class="btn btn-primary" id="hero-projects-btn" data-i18n="hero_btn_projects">View Projects</a>
@@ -116,19 +115,13 @@
       <div class="about-grid">
         <div class="about-text reveal">
           <p data-i18n="about_p1">
-            I'm a <strong>Mechatronics Engineering MSc student</strong> at Düzce University with over
-            4 years of hands-on experience in avionics system design, rocket technologies, and
-            aerospace hardware development.
+            I am continuing my master\'s degree in Mechatronics Engineering at Düzce University. I have over four years of hands-on experience in avionics system design, rocket technologies, and aerospace hardware development.
           </p>
           <p data-i18n="about_p2">
-            As an <strong>Avionics Team Captain and System Designer</strong> at TEKNOFEST and IREC competitions,
-            I have led projects from concept to successful operation — designing flight computers,
-            telemetry systems, and autonomous control cards.
+            By taking on the responsibilities of Avionics Team Captain and System Designer in TEKNOFEST and IREC competitions, I managed the processes of the projects from the concept stage to operation. Within the scope of these duties, I designed flight computers, telemetry systems, and autonomous control boards.
           </p>
           <p data-i18n="about_p3">
-            Currently working as a <strong>Hardware Design Engineer</strong> at Soylu Aerospace,
-            developing STM32H7-based autonomous flight control boards for VTOL and drone platforms
-            following MIL-STD-704 and DO-160 standards.
+            Finally, I worked as a Hardware Design Engineer at Soylu Aerospace. I carried out the development processes of STM32H7-based autonomous flight control boards and various systems in accordance with MIL-STD-704 and DO-160 standards.
           </p>
           <div class="about-links">
             <a href="mailto:ysfmrakdeniz@gmail.com" class="about-link" id="about-email-link">
@@ -375,6 +368,13 @@
             <div class="project-desc-long" data-i18n="proj4_desc_long" style="display: none;">
               TEKNOFEST Hava Savunma Sistemleri Yarışması'nda yer alan projenin bilgisayarlı görü yazılımları ile elektronik sistem entegrasyonu süreçleri yürütülmüştür. Geliştirilen sistemin temel amacı, havada bulunan hedef nesneleri (balonları) otonom olarak tespit etmek, takip etmek ve etkisiz hale getirmektir. Bu doğrultuda, nesne tespiti için OpenCV kütüphanesi ve Haar Cascade sınıflandırıcı algoritması kullanılmıştır. Hedef balonların farklı ışık ve arka plan koşullarındaki görüntüleri toplanarak veri seti oluşturulmuş ve makine öğrenmesi modeli eğitilmiştir. Görüntü işleme algoritmasından elde edilen hedef koordinat ve alan verileri fiziksel yönlendirme sistemine aktarılmıştır. Yönlendirme mekanizması, step ve servo motorlar kullanılarak iki eksenli bir hareket kabiliyeti sağlayacak şekilde tasarlanmıştır. Geliştirilen kapalı çevrim kontrol algoritması, kamera vizöründeki hedefin merkeze alınması için motorlara hassas konum komutları göndererek otonom hedef takibi işlevini yerine getirmiştir. Sistem stabil şekilde çalışarak takımın finalist olmasını sağlamıştır.
             </div>
+            <div class="project-images" style="display: none;">
+              <img src="hava-2024/1786711539411.jpg.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
+              <img src="hava-2024/1786711539461.jpg.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
+              <img src="hava-2024/1786711539537.jpg.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
+              <img src="hava-2024/2026-08-14 at 16.23.52.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
+            </div>
+
             <div class="project-tags">
               <span class="tag">Raspberry Pi 4</span><span class="tag">OpenCV</span>
               <span class="tag">Python</span><span class="tag">Computer Vision</span>
@@ -418,6 +418,13 @@
             <div class="project-desc-long" data-i18n="proj6_desc_long" style="display: none;">
               Proje yürütücülüğü üstlenilen SilentTrack sistemi, Küresel Konumlama Sistemi (GPS) sinyallerinin kesildiği veya ulaşılamadığı ortamlarda hava ve kara araçlarının kesintisiz konum tespiti yapabilmesi ve otonom rota takibi gerçekleştirebilmesi amacıyla geliştirilmiştir. Sistem, Yapısal Benzerlik İndeksi Ölçümü (SSIM) kullanan görüntü işleme tabanlı seyrüsefer teknikleri ile Ataletsel Seyrüsefer Sistemini (INS) birleştiren bir sensör füzyonu mimarisine dayanmaktadır. Seyir esnasında araç üzerindeki kameradan alınan anlık görüntüler, önceden sisteme yüklenmiş harita veya uydu görüntüleri ile SSIM algoritması kullanılarak karşılaştırılmakta ve görsel konum referansları elde edilmektedir. Eş zamanlı olarak, Ataletsel Ölçüm Birimi (IMU) sensörlerinden alınan ivme ve jiroskop verileri entegre edilerek INS üzerinden ölü hesaplama (dead reckoning) işlemi uygulanmaktadır. İki veri setinin füzyonu sayesinde sürüklenme (drift) hatası minimize edilmiş, yüksek doğruluklu konum ve yönelim tahmini elde edilmiştir. Proje, Düzce Bolu Ar-Ge Proje Pazarı'nda finale kalmıştır.
             </div>
+            <div class="project-images" style="display: none;">
+              <img src="hava-2024/1786711539411.jpg.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
+              <img src="hava-2024/1786711539461.jpg.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
+              <img src="hava-2024/1786711539537.jpg.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
+              <img src="hava-2024/2026-08-14 at 16.23.52.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
+            </div>
+
             <div class="project-tags">
               <span class="tag">Raspberry Pi 4</span><span class="tag">INS</span>
               <span class="tag">SSIM</span><span class="tag">Python</span>
