@@ -419,10 +419,8 @@
               Proje yürütücülüğü üstlenilen SilentTrack sistemi, Küresel Konumlama Sistemi (GPS) sinyallerinin kesildiği veya ulaşılamadığı ortamlarda hava ve kara araçlarının kesintisiz konum tespiti yapabilmesi ve otonom rota takibi gerçekleştirebilmesi amacıyla geliştirilmiştir. Sistem, Yapısal Benzerlik İndeksi Ölçümü (SSIM) kullanan görüntü işleme tabanlı seyrüsefer teknikleri ile Ataletsel Seyrüsefer Sistemini (INS) birleştiren bir sensör füzyonu mimarisine dayanmaktadır. Seyir esnasında araç üzerindeki kameradan alınan anlık görüntüler, önceden sisteme yüklenmiş harita veya uydu görüntüleri ile SSIM algoritması kullanılarak karşılaştırılmakta ve görsel konum referansları elde edilmektedir. Eş zamanlı olarak, Ataletsel Ölçüm Birimi (IMU) sensörlerinden alınan ivme ve jiroskop verileri entegre edilerek INS üzerinden ölü hesaplama (dead reckoning) işlemi uygulanmaktadır. İki veri setinin füzyonu sayesinde sürüklenme (drift) hatası minimize edilmiş, yüksek doğruluklu konum ve yönelim tahmini elde edilmiştir. Proje, Düzce Bolu Ar-Ge Proje Pazarı'nda finale kalmıştır.
             </div>
             <div class="project-images" style="display: none;">
-              <img src="hava-2024/1786711539411.jpg.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
-              <img src="hava-2024/1786711539461.jpg.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
-              <img src="hava-2024/1786711539537.jpg.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
-              <img src="hava-2024/2026-08-14 at 16.23.52.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
+              <img src="silent-2024/silentjpg1.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
+              <img src="silent-2024/silentjpg2.jpeg" style="height: 120px; border-radius: 8px; cursor: pointer; object-fit: cover;" onclick="document.getElementById('project-modal').style.display='flex'; document.getElementById('modal-img').src=this.src;">
             </div>
 
             <div class="project-tags">
@@ -603,7 +601,11 @@
       <span class="close-modal">&times;</span>
       <h3 id="modal-title" style="margin-bottom: 1rem; font-size: 1.5rem; color: #3b82f6;"></h3>
       <p id="modal-desc" style="margin-bottom: 1.5rem; line-height: 1.6; opacity: 0.9;"></p>
-      <div id="modal-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; width: 100%;">
+            <div id="modal-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; width: 100%;">
+      </div>
+      <div class="modal-nav" style="display: flex; justify-content: space-between; margin-top: 1.5rem;">
+        <button id="modal-prev" class="btn btn-ghost" data-i18n="modal_prev" style="padding: 0.5rem 1rem;">&larr; Previous</button>
+        <button id="modal-next" class="btn btn-ghost" data-i18n="modal_next" style="padding: 0.5rem 1rem;">Next &rarr;</button>
       </div>
     </div>
   </div>
