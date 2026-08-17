@@ -15,7 +15,7 @@ const TRANSLATIONS = {
 
     // Hero
     hero_badge:         'Available for opportunities',
-    hero_desc: 'Düzce Üniversitesi Mekatronik Mühendisliği Yüksek Lisans öğrencisi. 4 yılı aşkın aviyonik ve roket projesi, 1 yıl üzeri sektör deneyimimle havacılık, savunma ve otonom sistemler alanında yeni fırsatlar arıyorum.',
+    hero_desc:          'Mechatronics Engineering MSc student at Düzce University. Seeking new opportunities in aviation, defense, and autonomous systems with over 4 years of avionics and rocket project experience, and 1+ year of industry experience.',
     hero_btn_projects:  'View Projects',
     hero_btn_contact:   'Get in Touch',
     stat_experience:    'Years Experience',
@@ -23,17 +23,17 @@ const TRANSLATIONS = {
 
     // Typewriter texts
     typewriter_texts: [
-      'Mekatronik Mühendisi',
-      'Donanım Tasarım Mühendisi',
-      'Gömülü Sistemler Geliştiricisi',
+      'Mechatronics Engineer',
+      'Hardware Design Engineer',
+      'Embedded Systems Developer',
     ],
 
     // About
     about_tag:   '01 / About',
     about_title: 'Who I Am',
-    about_p1: "I am continuing my master's degree in Mechatronics Engineering at Düzce University. I have over four years of hands-on experience in avionics system design, rocket technologies, and aerospace hardware development.",
-    about_p2: "By taking on the responsibilities of Avionics Team Captain and System Designer in TEKNOFEST and IREC competitions, I managed the processes of the projects from the concept stage to operation. Within the scope of these duties, I designed flight computers, telemetry systems, and autonomous control boards.",
-    about_p3: "Finally, I worked as a Hardware Design Engineer at Soylu Aerospace. I carried out the development processes of STM32H7-based autonomous flight control boards and various systems in accordance with MIL-STD-704 and DO-160 standards.",
+    about_p1:    "I am continuing my master's degree in Mechatronics Engineering at Düzce University. I have over four years of hands-on experience in avionics system design, rocket technologies, and aerospace hardware development.",
+    about_p2:    "By taking on the responsibilities of Avionics Team Captain and System Designer in TEKNOFEST and IREC competitions, I managed the processes of the projects from the concept stage to operation. Within the scope of these duties, I designed flight computers, telemetry systems, and autonomous control boards.",
+    about_p3:    "Finally, I worked as a Hardware Design Engineer at Soylu Aerospace. I carried out the development processes of STM32H7-based autonomous flight control boards and various systems in accordance with MIL-STD-704 and DO-160 standards.",
     about_location: 'Düzce, Turkey',
     edu_msc_degree: 'MSc — Mechatronics Engineering',
     edu_msc_thesis: 'Thesis: Early Fault Detection in Aircraft via Machine Learning',
@@ -49,8 +49,8 @@ const TRANSLATIONS = {
     exp1_title: 'Hardware Design Engineer',
     exp1_date:  'Nov 2024 — Present',
     exp1_b1: 'Developed STM32H753-based Autonomous Flight Control Board for VTOL and drone platforms.',
-    exp1_b2: 'Developed STM32F765 flight control board for FPV and mini drones.',
-    exp1_b3: 'Developed adjustable multi-output Power Distribution Board with 260 A current capacity.',
+    exp1_b2: 'Designed expansion boards featuring Ethernet switches, USB hubs, and Cube Orange interfaces.',
+    exp1_b3: 'Developed a Static Thrust Test System with custom software and an automated battery charge/discharge station.',
     exp1_b4: 'Developed a buck regulator supporting 6-60V input voltage.',
     exp1_b5: 'Designed an expansion board featuring an Ethernet switch and USB hub.',
     exp1_b6: 'Designed an expansion board for Cube Orange.',
@@ -60,8 +60,8 @@ const TRANSLATIONS = {
     exp1_b10: 'Developed an automatic battery charge/discharge station.',
     exp2_title: 'Embedded Software & Hardware Design Engineer',
     exp2_date:  'Jun 2024 — Oct 2024',
-    exp2_b1: 'Designed various PCBs for healthcare products.',
-    exp2_b2: 'Developed Linux applications on embedded systems.',
+    exp2_b1: 'Developed flight computer architecture and telemetry modules.',
+    exp2_b2: 'Integrated and tested autonomous control algorithms.',
     exp2_b3: 'Carried out mechanical design and prototype production for medical devices.',
     exp2_b4: 'Conducted various laboratory tests (DC load, oscilloscope).',
     exp2_b5: 'Worked on the PCB assembly line.',
@@ -78,15 +78,12 @@ const TRANSLATIONS = {
     proj_details_btn: 'See Details',
     modal_prev: '&larr; Previous',
     modal_next: 'Next &rarr;',
-    proj_details_btn: 'See Details',
-    modal_prev: '&larr; Previous',
-    modal_next: 'Next &rarr;',
     proj1_badge: '🏆 Full Score',
     proj1_title: 'IREC 2025 & 2026',
     proj1_sub:   'International Rocket Engineering Competition — USA',
     proj1_desc:  'Achieved full score on payload design at the prestigious US competition. Built a 3-node LoRa communication architecture transmitting GPS, IMU & message data between Ground Station, Transmitter, and Payload.',
     proj2_badge: '🎖️ Captain',
-    proj2_title: 'TEKNOFEST — High Altitude Rocket 2025',
+    proj2_title: 'TEKNOFEST — Mid Altitude Rocket 2022-2023-2024',
     proj2_sub:   'Avionics Team Captain',
     proj2_desc:  'Designed & manufactured the payload avionics system. Developed algorithm that estimates landing position from IMU data and transmits telemetry to the ground station in real-time.',
     proj3_badge: '🥈 Finalist',
@@ -153,7 +150,7 @@ const TRANSLATIONS = {
     proj7_desc_long: 'The Baykuş Guidance Kit is a capstone project designed to transform standard, unguided free-fall munitions into smart munitions by integrating aerodynamic flight control surfaces and smart sensors. The core of the system is the electro-optical target recognition and tracking module based on machine learning and computer vision algorithms. The algorithm generates autonomous targeting commands by identifying the visual signature of the target. The most prominent technical goal of the project is to demonstrate resistance to electronic warfare and physical countermeasures. Feature extraction models were trained to distinguish preventive false targets like heat emitters (flares) and radar jammers (chaff) launched by aircraft from the actual target. In simulation and software tests, the machine learning model\'s correct target detection and tracking rate on clean images without countermeasures was measured at over 95%. In scenarios where deceptive elements such as flares or chaff were included in the image frame, the model\'s accuracy remained above 80%.',
 
     // Footer
-    footer_copy: '© 2026 Yusuf Emre Akdeniz - Mekatronik Mühendisi',
+    footer_copy: '© 2026 Yusuf Emre Akdeniz — Mechatronics Engineer',
   },
 
   tr: {
@@ -167,7 +164,7 @@ const TRANSLATIONS = {
 
     // Hero
     hero_badge:         'Fırsatlara açığım',
-    hero_desc:          'Düzce Üniversitesi Mekatronik Mühendisliği Yüksek Lisans öğrencisi. TEKNOFEST ve IREC\'te Aviyonik Takım Kaptanı. İHA, roket ve otonom sistemler için donanım tasarımcısı.',
+    hero_desc:          'Düzce Üniversitesi Mekatronik Mühendisliği Yüksek Lisans öğrencisi. 4 yılı aşkın aviyonik ve roket projesi, 1 yıl üzeri sektör deneyimimle havacılık, savunma ve otonom sistemler alanında yeni fırsatlar arıyorum.',
     hero_btn_projects:  'Projeleri Gör',
     hero_btn_contact:   'İletişime Geç',
     stat_experience:    'Yıllık Deneyim',
@@ -175,18 +172,17 @@ const TRANSLATIONS = {
 
     // Typewriter texts
     typewriter_texts: [
+      'Mekatronik Mühendisi',
       'Donanım Tasarım Mühendisi',
-      'Aviyonik Takım Kaptanı',
-      'Gömülü Sistem Geliştirici',
-      'Roket Sistemleri Tasarımcısı',
+      'Gömülü Sistemler Geliştiricisi',
     ],
 
     // About
     about_tag:   '01 / Hakkımda',
     about_title: 'Ben Kimim',
-    about_p1: 'Düzce Üniversitesi Mekatronik Mühendisliği bölümünde yüksek lisans eğitimime devam ediyorum. Aviyonik sistem tasarımı, roket teknolojileri ve havacılık donanım geliştirme alanlarında dört yılı aşkın uygulamalı tecrübem bulunuyor.',
-    about_p2: 'TEKNOFEST ve IREC yarışmalarında Aviyonik Takım Kaptanı ve Sistem Tasarımcısı sorumluluklarını üstlenerek projelerin konsept aşamasından operasyonuna kadar olan süreçleri yönettim. Bu görevler kapsamında uçuş bilgisayarları, telemetri sistemleri ve otonom kontrol kartları tasarladım.',
-    about_p3: 'Son olarak Soylu Aerospace bünyesinde Donanım Tasarım Mühendisi olarak görev yaptım. MIL-STD-704 ve DO-160 standartlarına uygun, STM32H7 tabanlı otonom uçuş kontrol kartlarını ve çeşitli sistemlerin geliştirme süreçlerini yürüttüm.',
+    about_p1:    'Düzce Üniversitesi Mekatronik Mühendisliği bölümünde yüksek lisans eğitimime devam ediyorum. Aviyonik sistem tasarımı, roket teknolojileri ve havacılık donanım geliştirme alanlarında dört yılı aşkın uygulamalı tecrübem bulunuyor.',
+    about_p2:    'TEKNOFEST ve IREC yarışmalarında Aviyonik Takım Kaptanı ve Sistem Tasarımcısı sorumluluklarını üstlenerek projelerin konsept aşamasından operasyonuna kadar olan süreçleri yönettim. Bu görevler kapsamında uçuş bilgisayarları, telemetri sistemleri ve otonom kontrol kartları tasarladım.',
+    about_p3:    'Son olarak Soylu Aerospace bünyesinde Donanım Tasarım Mühendisi olarak görev yaptım. MIL-STD-704 ve DO-160 standartlarına uygun, STM32H7 tabanlı otonom uçuş kontrol kartlarını ve çeşitli sistemlerin geliştirme süreçlerini yürüttüm.',
     about_location: 'Düzce, Türkiye',
     edu_msc_degree: 'Y. Lisans — Mekatronik Mühendisliği',
     edu_msc_thesis: 'Tez: Hava Araçlarında Makine Öğrenmesi ile Erken Arıza Tespiti',
@@ -201,9 +197,9 @@ const TRANSLATIONS = {
     intern_title: 'Staj Bilgisi',
     exp1_title: 'Donanım Tasarım Mühendisi',
     exp1_date:  'Kas 2024 — Devam ediyor',
-    exp1_b1: 'VTOL ve drone platformları için STM32H753 tabanlı Otonom Uçuş Kontrol Kartı geliştirildi.',
-    exp1_b2: 'FPV ve mini dronlar için STM32F765 uçuş kontrol kartı geliştirildi.',
-    exp1_b3: 'Ayarlanabilir çoklu çıkışlı ve 260 A akım kapasiteli Güç Dağıtım Kartı geliştirildi.',
+    exp1_b1: 'VTOL ve drone platformları için STM32H753 tabanlı Otonom Uçuş Kontrol Kartı ve 6-60V girişli buck regülatör geliştirildi.',
+    exp1_b2: 'Ethernet switch, USB hub ve Cube Orange arayüzü barındıran genişletme kartları tasarlandı.',
+    exp1_b3: 'Statik İtki Test Sistemi, yarı hareketli Drone Test sistemi ve otomatik batarya şarj istasyonu geliştirildi.',
     exp1_b4: '6-60V giriş gerilimi destekleyen buck regülatör geliştirildi.',
     exp1_b5: 'Ethernet switch ve USB hub barındıran expansion board tasarlandı.',
     exp1_b6: 'Cube Orange için expansion board tasarlandı.',
@@ -213,8 +209,8 @@ const TRANSLATIONS = {
     exp1_b10: 'Otomatik batarya şarj/deşarj istasyonu geliştirildi.',
     exp2_title: 'Gömülü Yazılım ve Donanım Tasarım Mühendisi',
     exp2_date:  'Haz 2024 - Eki 2024',
-    exp2_b1: 'Sağlık ürünleri için çeşitli PCB\'ler tasarlandı.',
-    exp2_b2: 'Gömülü sistemler üzerinde Linux uygulamaları yapıldı.',
+    exp2_b1: 'Uçuş bilgisayarı mimarisi ve telemetri modülleri geliştirildi.',
+    exp2_b2: 'Otonom kontrol algoritmaları entegre edildi ve test süreçleri yürütüldü.',
     exp2_b3: 'Tıbbi cihazlar için mekanik tasarım ve prototip üretimleri yapıldı.',
     exp2_b4: 'Bazı laboratuvar testleri (DC yük, osiloskop) gerçekleştirildi.',
     exp2_b5: 'PCB Dizgi hattında görev alındı.',
@@ -231,16 +227,13 @@ const TRANSLATIONS = {
     proj_details_btn: 'Detayları Gör',
     modal_prev: '&larr; Önceki',
     modal_next: 'Sonraki &rarr;',
-    proj_details_btn: 'Detayları Gör',
-    modal_prev: '&larr; Önceki',
-    modal_next: 'Sonraki &rarr;',
     proj1_badge: '🏆 Tam Puan',
     proj1_title: 'IREC 2025 & 2026',
     proj1_sub:   'Uluslararası Roket Mühendisliği Yarışması — ABD',
     proj1_desc:  'ABD\'de düzenlenen prestijli yarışmada görev yükü tasarımında tam puan alındı. Yer İstasyonu, İletimci ve Görev Yükü arasında GPS, IMU ve mesaj verisi aktaran 3 düğümlü LoRa haberleşme mimarisi kuruldu.',
     proj1_desc_long: 'ABD\'de gerçekleştirilen Uluslararası Roket Mühendisliği Yarışması\'nda (IREC) yer alan roket sisteminin görev yükü modülü geliştirilmiştir. Görev yükünün mekanik yapısı ve aviyonik sistemlerinin uçtan uca tasarımı, prototiplenmesi ve üretim süreçleri tamamlanmıştır. Sistem, yarışma hakemlerinden tam puan almış ve planlanan uçuş görevlerini hata payı sınırları içinde tamamlamıştır. Proje kapsamında kesintisiz veri aktarımı sağlamak amacıyla üç noktalı bir LoRa haberleşme mimarisi tasarlanmıştır. Bu mimari; yer istasyonu, havada bulunan iletimci (röle) modül ve ana görev yükü arasında çift yönlü veri akışı sağlamaktadır. Uçuş esnasında görev yükü üzerinde bulunan sensörlerden elde edilen Küresel Konumlama Sistemi (GPS) koordinatları, Ataletsel Ölçüm Birimi (IMU) verileri ve sistem durum mesajları gerçek zamanlı olarak yer istasyonuna aktarılmıştır. Bu altyapı, telemetri verilerinin yüksek irtifada ve zorlu radyo frekansı koşullarında kayıpsız iletilmesini sağlamak üzere optimize edilmiştir. Ek olarak, görev yükünün roket içi mekanik entegrasyonu yüksek ivmelenme ve titreşim koşullarına dayanacak şekilde üretilmiştir.',
     proj2_badge: '🎖️ Kaptan',
-    proj2_title: 'TEKNOFEST — Yüksek İrtifa Roketi 2025',
+    proj2_title: 'TEKNOFEST — Orta İrtifa Roket 2022-2023-2024',
     proj2_sub:   'Aviyonik Takım Kaptanı',
     proj2_desc:  'Görev yükü aviyonik sistemi tasarlandı ve üretildi. IMU verilerinden tahmini iniş konumu hesaplayıp telemetriyi yer istasyonuna gerçek zamanlı ileten algoritma geliştirildi.',
     proj2_desc_long: 'TEKNOFEST Yüksek İrtifa Roket Yarışması kapsamında, Aviyonik Takım Kaptanı olarak roket görev yükünün donanım ve yazılım sistemlerinin geliştirilmesine liderlik edilmiştir. Görev yükünün aviyonik kart tasarımı, gömülü yazılım geliştirme aşamaları ve üretim süreçleri bizzat yürütülmüştür. Bu projenin temel özgün görevi, uydu konumlama verisine bağımlı kalmadan uçuş yörüngesini ve tahmini iniş noktasını hesaplayabilen bir sistemin geliştirilmesidir. Sistem, Ataletsel Ölçüm Birimi (IMU) üzerinden alınan ivme ve açısal hız verilerini kullanarak anlık konum, hız ve yönelim hesaplamaları gerçekleştirmektedir. Elde edilen uçuş dinamiği parametreleri algoritmik olarak işlenmiş ve roketin paraşüt açılma sonrasındaki balistik düşüş profili modellenerek tahmini iniş noktası koordinatları türetilmiştir. Hesaplanan bu koordinatlar, standart uçuş telemetri verileri (irtifa, sıcaklık, basınç, batarya durumu) ile paketlenerek yer istasyonuna kesintisiz bir şekilde aktarılmıştır. Uçuş testleri esnasında sistem yüksek doğrulukla çalışarak kurtarma ekiplerinin roketin düştüğü bölgeyi hızlıca tespit etmesine olanak tanımıştır.',
@@ -524,13 +517,53 @@ document.querySelectorAll('.project-card.reveal').forEach((card, i) => {
 (function initModal() {
   const modal = document.getElementById('project-modal');
   const closeBtn = document.querySelector('.close-modal');
-  const projectCards = document.querySelectorAll('.project-card');
+  const projectCards = Array.from(document.querySelectorAll('.project-card'));
   const modalTitle = document.getElementById('modal-title');
   const modalDesc = document.getElementById('modal-desc');
   const modalGallery = document.getElementById('modal-gallery');
+  const modalPrev = document.getElementById('modal-prev');
+  const modalNext = document.getElementById('modal-next');
+  let currentProjectIndex = -1;
 
-  projectCards.forEach(card => {
-    // Inject Background Layer from first image
+  function openModalForCard(index) {
+    if (index < 0 || index >= projectCards.length) return;
+    currentProjectIndex = index;
+    const card = projectCards[index];
+
+    const title = card.querySelector('h3') ? card.querySelector('h3').innerHTML : '';
+    let desc = '';
+    if (card.querySelector('.project-desc-long')) {
+      desc = card.querySelector('.project-desc-long').innerHTML;
+    } else if (card.querySelector('.project-desc')) {
+      desc = card.querySelector('.project-desc').innerHTML;
+    }
+    
+    if(modalTitle) modalTitle.innerHTML = title;
+    if(modalDesc) modalDesc.innerHTML = desc;
+    
+    if (modalGallery) {
+      modalGallery.innerHTML = '';
+      const imagesContainer = card.querySelector('.project-images');
+      if (imagesContainer) {
+        const imgs = imagesContainer.querySelectorAll('img');
+        imgs.forEach(img => {
+          const clone = document.createElement('img');
+          clone.src = img.getAttribute('src');
+          clone.style.width = '100%';
+          clone.style.height = 'auto';
+          clone.style.borderRadius = '8px';
+          clone.style.objectFit = 'contain';
+          clone.style.maxHeight = '400px';
+          clone.style.backgroundColor = 'rgba(0,0,0,0.2)';
+          modalGallery.appendChild(clone);
+        });
+      }
+    }
+    
+    modal.classList.add('show');
+  }
+
+  projectCards.forEach((card, index) => {
     const imagesContainer = card.querySelector('.project-images');
     if (imagesContainer) {
       const firstImage = imagesContainer.querySelector('img');
@@ -543,58 +576,39 @@ document.querySelectorAll('.project-card.reveal').forEach((card, i) => {
     }
 
     card.addEventListener('click', (e) => {
-      // Don't open modal if they clicked on the admin panel inputs or editables
       if (e.target.isContentEditable) return;
-
-      const title = card.querySelector('h3') ? card.querySelector('h3').innerHTML : '';
-      
-      let desc = '';
-      if (card.querySelector('.project-desc-long')) {
-        desc = card.querySelector('.project-desc-long').innerHTML;
-      } else if (card.querySelector('.project-desc')) {
-        desc = card.querySelector('.project-desc').innerHTML;
-      }
-      
-      if(modalTitle) modalTitle.innerHTML = title;
-      if(modalDesc) modalDesc.innerHTML = desc;
-      
-      if (modalGallery) {
-        modalGallery.innerHTML = ''; // clear old
-        if (imagesContainer) {
-          const imgs = imagesContainer.querySelectorAll('img');
-          imgs.forEach(img => {
-            const clone = document.createElement('img');
-            clone.src = img.getAttribute('src');
-            clone.style.width = '100%';
-            clone.style.height = 'auto';
-            clone.style.borderRadius = '8px';
-            clone.style.objectFit = 'contain';
-            clone.style.maxHeight = '400px';
-            clone.style.backgroundColor = 'rgba(0,0,0,0.2)';
-            modalGallery.appendChild(clone);
-          });
-        }
-      }
-      
-      modal.classList.add('show');
+      openModalForCard(index);
     });
   });
 
-  if(closeBtn) {
-    closeBtn.addEventListener('click', () => {
-      modal.classList.remove('show');
-    });
-  }
-
+  if(closeBtn) closeBtn.addEventListener('click', () => modal.classList.remove('show'));
+  
   modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.remove('show');
-    }
+    if (e.target === modal) modal.classList.remove('show');
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('show')) {
+    if (!modal.classList.contains('show')) return;
+    if (e.key === 'Escape') {
       modal.classList.remove('show');
+    } else if (e.key === 'ArrowLeft') {
+      openModalForCard((currentProjectIndex - 1 + projectCards.length) % projectCards.length);
+    } else if (e.key === 'ArrowRight') {
+      openModalForCard((currentProjectIndex + 1) % projectCards.length);
     }
   });
+
+  if(modalPrev) {
+    modalPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openModalForCard((currentProjectIndex - 1 + projectCards.length) % projectCards.length);
+    });
+  }
+  
+  if(modalNext) {
+    modalNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openModalForCard((currentProjectIndex + 1) % projectCards.length);
+    });
+  }
 })();
