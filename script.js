@@ -572,7 +572,7 @@ document.querySelectorAll('.project-card.reveal').forEach((card, i) => {
       if (firstImage) {
         const bg = document.createElement('div');
         bg.className = 'project-card-bg';
-        bg.style.backgroundImage = url('');
+        bg.style.backgroundImage = `url('${firstImage.getAttribute('src')}')`;
         card.prepend(bg);
       }
     }
