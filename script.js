@@ -450,14 +450,7 @@ function applyTranslations(lang) {
     if (!t[key]) return;
 
     // innerHTML for rich-text keys (with <strong> etc.)
-    const richKeys = [
-      'about_p1','about_p2','about_p3',
-      'exp1_b1','exp1_b2','exp1_b3',
-      'exp2_b1','exp2_b2','exp3_b1',
-      'proj1_desc','proj2_desc','proj3_desc','proj4_desc',
-      'proj5_desc','proj6_desc','proj7_desc',
-    ];
-    if (richKeys.includes(key)) {
+    if (key.includes('desc') || key.includes('about') || key.includes('exp') || key.includes('hw')) {
       el.innerHTML = t[key];
     } else {
       el.textContent = t[key];
