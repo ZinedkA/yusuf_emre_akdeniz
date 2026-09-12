@@ -576,18 +576,21 @@ document.querySelectorAll('.project-card.reveal').forEach((card, i) => {
 (function initModal() {
   const modal = document.getElementById('project-modal');
   const closeBtn = document.querySelector('.close-modal');
-  const projectCards = Array.from(document.querySelectorAll('.project-card'));
+  const projectGrids = Array.from(document.querySelectorAll('.projects-grid'));
   const modalTitle = document.getElementById('modal-title');
   const modalDesc = document.getElementById('modal-desc');
   const modalGallery = document.getElementById('modal-gallery');
   const modalPrev = document.getElementById('modal-prev');
   const modalNext = document.getElementById('modal-next');
+  
+  let currentGroup = [];
   let currentProjectIndex = -1;
 
-  function openModalForCard(index) {
-    if (index < 0 || index >= projectCards.length) return;
+  function openModalForCard(group, index) {
+    if (index < 0 || index >= group.length) return;
+    currentGroup = group;
     currentProjectIndex = index;
-    const card = projectCards[index];
+    const card = group[index];
 
     const title = card.querySelector('h3') ? card.querySelector('h3').innerHTML : '';
     let desc = '';
@@ -675,23 +678,23 @@ document.querySelectorAll('.project-card.reveal').forEach((card, i) => {
     if (e.key === 'Escape') {
       modal.classList.remove('show');
     } else if (e.key === 'ArrowLeft') {
-      openModalForCard((currentProjectIndex - 1 + projectCards.length) % projectCards.length);
+      openModalForCard(currentGroup, (currentProjectIndex - 1 + currentGroup.length) % currentGroup.length);
     } else if (e.key === 'ArrowRight') {
-      openModalForCard((currentProjectIndex + 1) % projectCards.length);
+      openModalForCard(currentGroup, (currentProjectIndex + 1) % currentGroup.length);
     }
   });
 
   if(modalPrev) {
     modalPrev.addEventListener('click', (e) => {
       e.stopPropagation();
-      openModalForCard((currentProjectIndex - 1 + projectCards.length) % projectCards.length);
+      openModalForCard(currentGroup, (currentProjectIndex - 1 + currentGroup.length) % currentGroup.length);
     });
   }
   
   if(modalNext) {
     modalNext.addEventListener('click', (e) => {
       e.stopPropagation();
-      openModalForCard((currentProjectIndex + 1) % projectCards.length);
+      openModalForCard(currentGroup, (currentProjectIndex + 1) % currentGroup.length);
     });
   }
 })();
