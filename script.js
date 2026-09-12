@@ -608,12 +608,25 @@ document.querySelectorAll('.project-card.reveal').forEach((card, i) => {
         imgs.forEach(img => {
           const clone = document.createElement('img');
           clone.src = img.getAttribute('src');
-          clone.style.width = '100%';
-          clone.style.height = 'auto';
+          clone.style.height = '240px';
+          clone.style.minWidth = '200px';
+          clone.style.width = 'auto';
+          clone.style.maxWidth = '100%';
           clone.style.borderRadius = '8px';
           clone.style.objectFit = 'contain';
-          clone.style.maxHeight = '400px';
-          clone.style.backgroundColor = 'rgba(0,0,0,0.2)';
+          clone.style.scrollSnapAlign = 'start';
+          clone.style.cursor = 'zoom-in';
+          clone.style.backgroundColor = 'rgba(0,0,0,0.3)';
+          
+          clone.addEventListener('click', () => {
+            const lb = document.getElementById('lightbox-modal');
+            const lbImg = document.getElementById('lightbox-img');
+            if(lb && lbImg) {
+              lbImg.src = clone.src;
+              lb.classList.add('show');
+            }
+          });
+
           modalGallery.appendChild(clone);
         });
       }
@@ -645,6 +658,17 @@ document.querySelectorAll('.project-card.reveal').forEach((card, i) => {
   modal.addEventListener('click', (e) => {
     if (e.target === modal) modal.classList.remove('show');
   });
+
+  const lb = document.getElementById('lightbox-modal');
+  const lbClose = document.querySelector('.close-lightbox');
+  if(lbClose) {
+    lbClose.addEventListener('click', () => lb.classList.remove('show'));
+  }
+  if(lb) {
+    lb.addEventListener('click', (e) => {
+      if (e.target === lb || e.target === lbClose) lb.classList.remove('show');
+    });
+  }
 
   document.addEventListener('keydown', (e) => {
     if (!modal.classList.contains('show')) return;

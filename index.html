@@ -780,17 +780,37 @@
 
   <!-- ─── PROJECT MODAL ─── -->
   <div id="project-modal" class="modal">
-    <div class="modal-content glass-card" style="max-width: 800px; padding: 2rem; width: 90%;">
+    <div class="modal-content glass-card" style="max-width: 900px; padding: 2rem; width: 90%; max-height: 90vh; display: flex; flex-direction: column;">
       <span class="close-modal">&times;</span>
-      <h3 id="modal-title" style="margin-bottom: 1rem; font-size: 1.5rem; color: #3b82f6;"></h3>
-      <p id="modal-desc" style="margin-bottom: 1.5rem; line-height: 1.6; opacity: 0.9;"></p>
-            <div id="modal-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; width: 100%;">
+      <h3 id="modal-title" style="margin-bottom: 1rem; font-size: 1.5rem; color: #3b82f6; flex-shrink: 0;"></h3>
+      
+      <div style="flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 1.5rem; padding-right: 10px;">
+        <p id="modal-desc" style="line-height: 1.6; opacity: 0.9; margin: 0;"></p>
+        
+        <div id="modal-gallery" style="
+            display: flex; 
+            gap: 15px; 
+            overflow-x: auto; 
+            scroll-snap-type: x mandatory; 
+            padding-bottom: 10px;
+            flex-shrink: 0;
+            scrollbar-width: thin;
+        ">
+        </div>
       </div>
-      <div class="modal-nav" style="display: flex; justify-content: space-between; margin-top: 1.5rem;">
+
+      <div class="modal-nav" style="display: flex; justify-content: space-between; margin-top: 1.5rem; flex-shrink: 0;">
         <button id="modal-prev" class="btn btn-ghost" data-i18n="modal_prev" style="padding: 0.5rem 1rem;">&#8592; Previous</button>
         <button id="modal-next" class="btn btn-ghost" data-i18n="modal_next" style="padding: 0.5rem 1rem;">Next &#8594;</button>
       </div>
     </div>
+  </div>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="modal" style="z-index: 10000; align-items: center; justify-content: center; background: rgba(0,0,0,0.85);">
+    <span class="close-lightbox" style="position: absolute; top: 20px; right: 30px; font-size: 2.5rem; color: #fff; cursor: pointer; z-index: 10001;">&times;</span>
+    <img id="lightbox-img" src="" style="max-width: 95%; max-height: 95vh; object-fit: contain; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+  </div>
   </div>
 
 
