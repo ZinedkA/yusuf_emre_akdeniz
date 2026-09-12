@@ -638,21 +638,24 @@ document.querySelectorAll('.project-card.reveal').forEach((card, i) => {
     modal.classList.add('show');
   }
 
-  projectCards.forEach((card, index) => {
-    const imagesContainer = card.querySelector('.project-images');
-    if (imagesContainer) {
-      const firstImage = imagesContainer.querySelector('img');
-      if (firstImage) {
-        const bg = document.createElement('div');
-        bg.className = 'project-card-bg';
-        bg.style.backgroundImage = `url('${firstImage.getAttribute('src')}')`;
-        card.prepend(bg);
+  projectGrids.forEach((grid) => {
+    const cards = Array.from(grid.querySelectorAll('.project-card'));
+    cards.forEach((card, index) => {
+      const imagesContainer = card.querySelector('.project-images');
+      if (imagesContainer) {
+        const firstImage = imagesContainer.querySelector('img');
+        if (firstImage) {
+          const bg = document.createElement('div');
+          bg.className = 'project-card-bg';
+          bg.style.backgroundImage = url('');
+          card.prepend(bg);
+        }
       }
-    }
 
-    card.addEventListener('click', (e) => {
-      if (e.target.isContentEditable) return;
-      openModalForCard(index);
+      card.addEventListener('click', (e) => {
+        if (e.target.isContentEditable) return;
+        openModalForCard(cards, index);
+      });
     });
   });
 
