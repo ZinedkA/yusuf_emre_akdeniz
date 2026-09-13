@@ -165,6 +165,7 @@ const TRANSLATIONS = {
     s_prob:      'Problem Solving',
     s_detail:    'Detail-Oriented',
     s_multi:     'Multidisciplinary',
+    
 
     // Contact
     contact_tag:        '06 / Contact',
